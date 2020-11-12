@@ -114,8 +114,7 @@
           />
           <p><i class="fas fa-home mr-3"></i> Eragny sur Oise</p>
           <p><i class="fas fa-envelope mr-3"></i> erinawambiekele@gmail.com</p>
-          <p><i class="fas fa-phone mr-3"></i> + 337 61 24 92 14</p>
-          <p><i class="fas fa-print mr-3"></i> + 01 34 21 87 27</p>
+        
         </div>
         <!-- Grid column -->
       </div>
