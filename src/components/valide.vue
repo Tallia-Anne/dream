@@ -34,7 +34,7 @@ export default {
   methods: {
     validermail: function () {
       this.axios
-        .post(this.$apiurl + "/client/validemail", {
+        .post(this.$apiurl + "client/validemail", {
           email: this.email,
         })
         .then((result) => {

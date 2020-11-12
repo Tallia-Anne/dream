@@ -92,7 +92,7 @@ export default {
   },
   created() {
     this.axios
-      .get(this.$apiurl +"/produit/all")
+      .get(this.$apiurl +"produit/all")
       .then((res) => {
         console.log(res);
         this.produits = res.data.produits;

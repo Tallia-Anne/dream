@@ -84,7 +84,7 @@ export default {
   methods: {
     update: function () {
       this.axios
-        .put(this.$apiurl + "/client/update/" + this.client.id)
+        .put(this.$apiurl + "client/update/" + this.client.id)
         .then((res) => {
           console.log(res);
           if (res.status === 200) {

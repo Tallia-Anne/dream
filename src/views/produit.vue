@@ -18,7 +18,7 @@ export default {
   },
   created() {
     this.axios
-      .get(this.$apiurl +"/produit/limit/32")
+      .get(this.$apiurl +"produit/limit/32")
       .then((res) => {
         console.log(res);
         this.produits = res.data.produits;

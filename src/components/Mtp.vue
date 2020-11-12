@@ -52,7 +52,7 @@ export default {
   methods: {
     doupdatepass: function () {
       this.axios
-        .post(this.$apiurl +"/client/updatepassword", {
+        .post(this.$apiurl +"client/updatepassword", {
           forget: this.forget,
           password: this.password,
         })

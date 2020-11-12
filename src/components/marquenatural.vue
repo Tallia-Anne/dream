@@ -18,7 +18,7 @@ export default {
   },
   created() {
     this.axios
-      .get(this.$apiurl +"/produit/findBy/naturalong")
+      .get(this.$apiurl +"produit/findBy/naturalong")
       .then((res) => {
         console.log(res);
         this.produits = res.data.produits;

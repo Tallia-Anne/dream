@@ -71,7 +71,7 @@ export default {
   },
   created() {
     this.axios
-      .get("http://localhost:3000/commande/show")
+      .get(this.$apiurl +"commande/show")
       .then((res) => {
         console.log(res);
         this.commande = res.data.commande;

@@ -177,7 +177,7 @@ export default {
   },
   created() {
     this.axios
-      .get(this.$apiurl +"/produit/limit/4")
+      .get(this.$apiurl +"produit/limit/4")
       .then((res) => {
         console.log(res);
         this.produits = res.data.produits;
