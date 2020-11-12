@@ -10,7 +10,7 @@ export default {
   name: "compte",
   created() {
     this.axios
-      .get("http://localhost:3000/client/profile")
+      .get(this.$apiurl +"/client/profile")
       .then((res) => {
         console.log(res.data);
         this.clients = res.data.client;
