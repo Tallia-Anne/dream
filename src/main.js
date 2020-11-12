@@ -6,6 +6,8 @@ import axios from "axios";
 import Vueaxios from "vue-axios";
 
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
+
+Vue.prototype.$apiurl = "http://146.59.225.190:3000";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 

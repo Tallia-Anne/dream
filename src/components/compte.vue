@@ -136,7 +136,7 @@ export default {
   },
   created() {
     this.axios
-      .get("http://localhost:3000/client/profile/" + this.client.id)
+      .get(this.$apiurl +"/client/profile/" + this.client.id)
       .then((res) => {
         console.log(res);
         this.client = res.data.client;
