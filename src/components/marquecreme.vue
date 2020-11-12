@@ -18,7 +18,7 @@ export default {
   },
   created() {
     this.axios
-      .get("http://localhost:3000/produit/all/8/23")
+      .get(this.$apiurl +"/produit/all/8/23")
       .then((res) => {
         console.log(res);
         this.produit = res.data.produit;
