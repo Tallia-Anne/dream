@@ -172,6 +172,7 @@ export default {
     margin: 0;
     color: palevioletred;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;

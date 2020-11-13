@@ -165,6 +165,7 @@ export default {
     font-size: 64px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;

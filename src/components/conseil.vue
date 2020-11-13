@@ -135,11 +135,13 @@ export default {
   padding: 4%;
   font-family: "Galada", cursive;
   font-size: 48px;
+  text-align: center;
 }
 
 /* le paragraphe */
 .conseil {
   font-family: "Galada", cursive;
+  text-align: center;
 }
 
 .portfolio_content {
