@@ -594,7 +594,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88;
     visibility: hidden;
     text-align: center;
