@@ -140,7 +140,7 @@ export default {
     width: 100%;
   }
   .section-paragraphe {
-    font-size: 45px;
+    font-size: 35px;
     font-family: "Playfair Display", serif;
   }
   .single-publication {
@@ -200,7 +200,6 @@ export default {
   .single-publication .publication-content .price {
     font-size: 20px;
     color: gold;
-
     padding-left: 5px;
     font-weight: 300;
   }
@@ -275,8 +274,9 @@ export default {
     background-repeat: no-repeat;
   }
   .section-paragraphe {
-    font-size: 45px;
+    font-size: 35px;
     font-family: "Playfair Display", serif;
+    text-align: center;
   }
   .single-publication {
     --auto-grid-min-size: 13rem;
@@ -301,6 +301,7 @@ export default {
     font-size: 55px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -333,7 +334,6 @@ export default {
   .single-publication .publication-content .price {
     font-size: 20px;
     color: gold;
-
     padding-left: 5px;
     font-weight: 300;
   }
@@ -345,7 +345,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88;
     visibility: hidden;
     text-align: center;
@@ -401,6 +400,7 @@ export default {
   .section-paragraphe {
     font-size: 30px;
     font-family: "Playfair Display", serif;
+    text-align: center;
   }
   .single-publication {
     --auto-grid-min-size: 12rem;
@@ -425,6 +425,7 @@ export default {
     font-size: 42px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -469,7 +470,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88;
     visibility: hidden;
     text-align: center;
@@ -525,6 +525,7 @@ export default {
   .section-paragraphe {
     font-size: 20px;
     font-family: "Playfair Display", serif;
+    text-align: center;
   }
   .single-publication {
     --auto-grid-min-size: 13rem;
@@ -549,6 +550,7 @@ export default {
     font-size: 29px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -581,7 +583,6 @@ export default {
   .single-publication .publication-content .price {
     font-size: 20px;
     color: gold;
-
     padding-left: 5px;
     font-weight: 300;
   }
@@ -652,10 +653,12 @@ export default {
     font-size: 20px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .section-paragraphe {
     font-size: 15px;
     font-family: "Playfair Display", serif;
+    text-align: center;
   }
   .single-publication {
     --auto-grid-min-size: 13rem;
@@ -706,7 +709,6 @@ export default {
   .single-publication .publication-content .price {
     font-size: 20px;
     color: gold;
-
     padding-left: 5px;
     font-weight: 300;
   }

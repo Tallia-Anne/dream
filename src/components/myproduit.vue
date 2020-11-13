@@ -291,6 +291,7 @@ export default {
     font-size: 64px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -334,7 +335,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
@@ -392,7 +392,6 @@ export default {
   }
   .single-publication {
     --auto-grid-min-size: 13rem;
-
     display: grid;
     grid-template-columns: repeat(
       auto-fill,
@@ -512,7 +511,6 @@ export default {
   }
   .single-publication {
     --auto-grid-min-size: 12rem;
-
     display: grid;
     grid-template-columns: repeat(
       auto-fill,
@@ -534,6 +532,7 @@ export default {
     font-size: 64px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -566,7 +565,6 @@ export default {
   .single-publication .publication-content .price {
     font-size: 20px;
     color: gold;
-
     padding-left: 5px;
     font-weight: 300;
   }
@@ -578,7 +576,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
@@ -633,7 +630,6 @@ export default {
   }
   .single-publication {
     --auto-grid-min-size: 15rem;
-
     display: grid;
     grid-template-columns: repeat(
       auto-fill,
@@ -655,6 +651,7 @@ export default {
     font-size: 64px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -699,7 +696,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;

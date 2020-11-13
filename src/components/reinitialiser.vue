@@ -107,6 +107,7 @@ export default {
     letter-spacing: 2px;
     font-size: 3.5em;
     margin: 0;
+    
   }
   /* le paragraphe du formulaire */
   #container p {

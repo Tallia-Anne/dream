@@ -224,7 +224,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
@@ -285,7 +284,7 @@ export default {
     background-repeat: no-repeat;
   }
   .section-paragraphe {
-    font-size: 45px;
+    font-size: 35px;
     font-family: "Playfair Display", serif;
   }
 
@@ -313,6 +312,7 @@ export default {
     font-size: 55px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -413,7 +413,7 @@ export default {
     width: 100%;
   }
   .section-paragraphe {
-    font-size: 30px;
+    font-size: 25px;
     font-family: "Playfair Display", serif;
   }
   .single-publication {
@@ -439,6 +439,7 @@ export default {
     font-size: 52px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -538,7 +539,7 @@ export default {
     width: 100%;
   }
   .section-paragraphe {
-    font-size: 28px;
+    font-size: 18px;
     font-family: "Playfair Display", serif;
   }
   .single-publication {
@@ -564,6 +565,7 @@ export default {
     font-size: 35px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -608,7 +610,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
@@ -669,9 +670,10 @@ export default {
     font-size: 34px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .section-paragraphe {
-    font-size: 24px;
+    font-size: 14px;
     font-family: "Playfair Display", serif;
   }
   .single-publication {
@@ -691,7 +693,6 @@ export default {
     border: 1px solid black;
     overflow: hidden;
   }
-
   .single-publication figure {
     position: relative;
     margin: 0;
@@ -723,7 +724,6 @@ export default {
   .single-publication .publication-content .price {
     font-size: 20px;
     color: gold;
-
     padding-left: 5px;
     font-weight: 300;
   }
@@ -735,7 +735,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;

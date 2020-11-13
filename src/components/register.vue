@@ -337,6 +337,10 @@ de l'image vers le bas */
     flex-direction: column;
     width: 73%;
   }
+  /* le titre du login */
+  h2 {
+    text-align: center;
+  }
   /* la taille de l'image */
   .regform .form-left {
     width: 100%;
@@ -412,6 +416,10 @@ de l'image vers le bas */
     justify-content: center;
     align-items: center;
     background-image: url("../assets/fond.jpg");
+  }
+  /* le titre du login */
+  h2 {
+    text-align: center;
   }
   /* le format du formulaire */
   .regform {
@@ -500,6 +508,10 @@ de l'image vers le bas */
     margin: 120px 20px;
     flex-direction: column;
     width: 73%;
+  }
+  /* le titre du login */
+  h2 {
+    text-align: center;
   }
   /* la taille de l'image */
   .regform .form-left {

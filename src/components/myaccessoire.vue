@@ -145,11 +145,13 @@ export default {
     font-size: 55px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   /* le paragraphe : la taille et  la police */
   .section-paragraphe {
-    font-size: 45px;
+    font-size: 35px;
     font-family: "Playfair Display", serif;
+    text-align: center;
   }
   /* la dispositionnement tes produits */
   .single-publication {
@@ -282,10 +284,12 @@ export default {
     font-size: 55px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .section-paragraphe {
-    font-size: 45px;
+    font-size: 35px;
     font-family: "Playfair Display", serif;
+    text-align: center;
   }
   /* dispositionnement du produit */
   .single-publication {
@@ -404,8 +408,9 @@ export default {
     height: 96%;
   }
   .section-paragraphe {
-    font-size: 30px;
+    font-size: 20px;
     font-family: "Playfair Display", serif;
+    text-align: center;
   }
   .single-publication {
     --auto-grid-min-size: 13rem;
@@ -430,6 +435,7 @@ export default {
     font-size: 52px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -529,6 +535,7 @@ export default {
   .section-paragraphe {
     font-size: 28px;
     font-family: "Playfair Display", serif;
+    text-align: center;
   }
   /* le dispositionnement du produit */
   .single-publication {
@@ -555,6 +562,7 @@ export default {
     font-size: 35px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -598,7 +606,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
@@ -659,10 +666,12 @@ export default {
     font-size: 34px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .section-paragraphe {
-    font-size: 24px;
+    font-size: 14px;
     font-family: "Playfair Display", serif;
+    text-align: center;
   }
   /* dispositionnement des produit */
   .single-publication {

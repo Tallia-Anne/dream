@@ -275,10 +275,6 @@ export default {
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
-  .section-paragraphe {
-    font-size: 45px;
-    font-family: "Playfair Display", serif;
-  }
   .single-publication {
     display: flex;
     flex-direction: row;
@@ -299,6 +295,7 @@ export default {
     color: palevioletred;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -343,7 +340,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
@@ -417,6 +413,7 @@ export default {
     margin: 0;
     padding: 7%;
     color: palevioletred;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -532,6 +529,7 @@ export default {
     color: palevioletred;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -634,6 +632,7 @@ export default {
     margin: 0;
     padding: 7%;
     color: palevioletred;
+    text-align: center;
   }
   .single-publication {
     display: flex;

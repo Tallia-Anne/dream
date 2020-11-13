@@ -116,10 +116,7 @@ export default {
   .container-img {
     width: 100%;
   }
-  .section-paragraphe {
-    font-size: 45px;
-    font-family: "Playfair Display", serif;
-  }
+  
   .single-publication {
     --auto-grid-min-size: 15rem;
 
@@ -147,6 +144,7 @@ export default {
     background: url("https://image.freepik.com/photos-gratuite/ensemble-produits-noix-coco-pour-soin-cheveux-du-corps_100073-106.jpg");
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -275,10 +273,7 @@ export default {
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
-  .section-paragraphe {
-    font-size: 45px;
-    font-family: "Playfair Display", serif;
-  }
+ 
   .single-publication {
     --auto-grid-min-size: 13rem;
     display: grid;
@@ -305,6 +300,7 @@ export default {
     font-size: 55px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -426,10 +422,7 @@ export default {
   .container-img {
     width: 100%;
   }
-  .section-paragraphe {
-    font-size: 30px;
-    font-family: "Playfair Display", serif;
-  }
+ 
   .single-publication {
     --auto-grid-min-size: 13rem;
     display: grid;
@@ -453,6 +446,7 @@ export default {
     font-size: 52px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -485,7 +479,6 @@ export default {
   .single-publication .publication-content .price {
     font-size: 20px;
     color: gold;
-
     padding-left: 5px;
     font-weight: 300;
   }
@@ -497,7 +490,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
@@ -577,10 +569,6 @@ export default {
   .container-img {
     width: 100%;
   }
-  .section-paragraphe {
-    font-size: 28px;
-    font-family: "Playfair Display", serif;
-  }
   .single-publication {
     --auto-grid-min-size: 13rem;
     display: grid;
@@ -604,6 +592,7 @@ export default {
     font-size: 35px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -647,7 +636,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
@@ -737,10 +725,7 @@ export default {
     font-size: 34px;
     margin: 0;
     padding: 7%;
-  }
-  .section-paragraphe {
-    font-size: 24px;
-    font-family: "Playfair Display", serif;
+    text-align: center;
   }
   .single-publication {
     --auto-grid-min-size: 13rem;

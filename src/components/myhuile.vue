@@ -132,8 +132,9 @@ export default {
     width: 100%;
   }
   .section-paragraphe {
-    font-size: 45px;
+    font-size: 35px;
     font-family: "Playfair Display", serif;
+    text-align: center;
   }
   .single-publication {
     --auto-grid-min-size: 15rem;
@@ -159,6 +160,7 @@ export default {
     font-size: 55px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -203,7 +205,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
@@ -268,8 +269,9 @@ export default {
     height: 516px;
   }
   .section-paragraphe {
-    font-size: 45px;
+    font-size: 35px;
     font-family: "Playfair Display", serif;
+    text-align: center;
   }
   .single-publication {
     --auto-grid-min-size: 13rem;
@@ -294,6 +296,7 @@ export default {
     font-size: 55px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -338,7 +341,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
@@ -392,8 +394,9 @@ export default {
     width: 100%;
   }
   .section-paragraphe {
-    font-size: 30px;
+    font-size: 20px;
     font-family: "Playfair Display", serif;
+    text-align: center;
   }
   .single-publication {
     --auto-grid-min-size: 13rem;
@@ -418,6 +421,7 @@ export default {
     font-size: 52px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -462,7 +466,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
@@ -516,8 +519,9 @@ export default {
     width: 100%;
   }
   .section-paragraphe {
-    font-size: 28px;
+    font-size: 18px;
     font-family: "Playfair Display", serif;
+    text-align: center;
   }
   .single-publication {
     --auto-grid-min-size: 13rem;
@@ -539,9 +543,10 @@ export default {
   .section-header h2 {
     font-weight: bold;
     font-family: "Playfair Display", serif;
-    font-size: 35px;
+    font-size: 25px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -574,7 +579,6 @@ export default {
   .single-publication .publication-content .price {
     font-size: 20px;
     color: gold;
-
     padding-left: 5px;
     font-weight: 300;
   }
@@ -586,7 +590,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
@@ -645,10 +648,12 @@ export default {
     font-size: 34px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .section-paragraphe {
-    font-size: 24px;
+    font-size: 14px;
     font-family: "Playfair Display", serif;
+    text-align: center;
   }
   .single-publication {
     --auto-grid-min-size: 13rem;
@@ -699,7 +704,6 @@ export default {
   .single-publication .publication-content .price {
     font-size: 20px;
     color: gold;
-
     padding-left: 5px;
     font-weight: 300;
   }
@@ -711,7 +715,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;

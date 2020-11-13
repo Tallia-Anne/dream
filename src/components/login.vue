@@ -321,6 +321,10 @@ de l'image vers le bas */
     flex-direction: column;
     width: 73%;
   }
+  /* le titre du login */
+  h2 {
+    text-align: center;
+  }
   /* la taille de l'image */
   .regform .form-left {
     width: 100%;
@@ -409,6 +413,10 @@ de l'image vers le bas */
     flex-direction: column;
     width: 73%;
   }
+  /* le titre du login */
+  h2 {
+    text-align: center;
+  }
   /* la taille de l'image */
   .regform .form-left {
     width: 100%;
@@ -477,6 +485,10 @@ de l'image vers le bas */
   regform .form-detail .register:active {
     transform: translatey(5px);
   }
+   a {
+    color: black;
+    font-size: 13px;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   /* arrière plan */
@@ -496,6 +508,10 @@ de l'image vers le bas */
     margin: 120px 20px;
     flex-direction: column;
     width: 73%;
+  }
+  /* le titre du login */
+  h2 {
+    text-align: center;
   }
   /* la taille de l'image */
   .regform .form-left {
@@ -564,6 +580,10 @@ de l'image vers le bas */
   }
   regform .form-detail .register:active {
     transform: translatey(5px);
+  }
+  a {
+    color: black;
+    font-size: 13px;
   }
 }
 </style>

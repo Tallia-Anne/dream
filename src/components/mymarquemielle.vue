@@ -304,6 +304,7 @@ export default {
     color: palevioletred;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -427,6 +428,7 @@ export default {
     margin: 0;
     padding: 7%;
     color: palevioletred;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -549,6 +551,7 @@ export default {
     color: palevioletred;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -654,6 +657,7 @@ export default {
     margin: 0;
     padding: 7%;
     color: palevioletred;
+    text-align: center;
   }
   .single-publication {
     --auto-grid-min-size: 13rem;
@@ -716,7 +720,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88;
     visibility: hidden;
     text-align: center;
