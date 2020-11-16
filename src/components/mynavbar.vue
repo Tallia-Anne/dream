@@ -25,10 +25,6 @@
         <i class="fas fa-home"></i>
         <span>Adresses</span>
       </a>
-      <a href="/calendars">
-        <i class="fas fa-calendar"></i>
-        <span>Events</span>
-      </a>
       <a href="/contact">
         <i class="far fa-envelope"></i>
         <span>Contact</span>

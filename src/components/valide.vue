@@ -1,5 +1,5 @@
 <template>
-  <div class="contact">
+  <div class="valide">
     <div class="wrap">
       <h2>Validation de l'adresse email</h2>
 
@@ -169,7 +169,7 @@ export default {
     background-color: #ff99cc;
     opacity: 0.9;
     width: 500px;
-    height: 48%;
+    height: 25%;
     padding: 25px;
     margin: 25px auto 0;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
@@ -221,7 +221,7 @@ export default {
     background-color: #ff99cc;
     opacity: 0.9;
     width: 298px;
-    height: 48%;
+    height: 24%;
     padding: 25px;
     margin: 25px auto 0;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
@@ -273,7 +273,7 @@ export default {
     background-color: #ff99cc;
     opacity: 0.9;
     width: 298px;
-    height: 48%;
+    height: 24%;
     padding: 25px;
     margin: 25px auto 0;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);

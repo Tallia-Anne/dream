@@ -200,7 +200,6 @@ de l'image vers le bas */
   .regform .form-detail .register {
     background-image: linear-gradient(to left, yellow 0%, orange 100%);
     box-shadow: 0 9px 25px -5px orange;
-
     border-radius: 6px;
     width: 160px;
     padding: 10px;
@@ -229,7 +228,7 @@ de l'image vers le bas */
   /* le bloc du formulaire */
   .regform {
     background: #fff;
-    width: 968px;
+    width: 845px;
     border-radius: 7px;
     font-family: "Courier New", Courier, monospace;
     position: relative;
@@ -237,7 +236,7 @@ de l'image vers le bas */
     box-shadow: 10px 3px 10px 11px rgba(0, 0, 0, 0.75);
     margin-left: 13%;
     margin-top: 3%;
-    height: 81%;
+    height: 82%;
   }
   /* le positionnement 
 de l'image vers le bas */
@@ -306,7 +305,6 @@ de l'image vers le bas */
   .regform .form-detail .register {
     background-image: linear-gradient(to left, yellow 0%, orange 100%);
     box-shadow: 0 9px 25px -5px orange;
-
     border-radius: 6px;
     width: 160px;
     padding: 10px;
@@ -392,13 +390,12 @@ de l'image vers le bas */
   .regform .form-detail .register {
     background-image: linear-gradient(to left, yellow 0%, orange 100%);
     box-shadow: 0 9px 25px -5px orange;
-
     border-radius: 6px;
     width: 160px;
     padding: 10px;
     border: none;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0, 15) !important;
-    margin: 37px 0 50px 0px;
+    margin: 37px 0 50px 156px;
     font-family: "Courier New", Courier, monospace;
     font-weight: 700;
     font-size: 18px;
@@ -478,13 +475,12 @@ de l'image vers le bas */
   .regform .form-detail .register {
     background-image: linear-gradient(to left, yellow 0%, orange 100%);
     box-shadow: 0 9px 25px -5px orange;
-
     border-radius: 6px;
     width: 160px;
     padding: 10px;
     border: none;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0, 15) !important;
-    margin: 37px 0 50px 0px;
+    margin: 37px 0 50px 50px;
     font-family: "Courier New", Courier, monospace;
     font-weight: 700;
     font-size: 18px;
@@ -564,7 +560,6 @@ de l'image vers le bas */
   .regform .form-detail .register {
     background-image: linear-gradient(to left, yellow 0%, orange 100%);
     box-shadow: 0 9px 25px -5px orange;
-
     border-radius: 6px;
     width: 160px;
     padding: 10px;
@@ -574,6 +569,7 @@ de l'image vers le bas */
     font-family: "Courier New", Courier, monospace;
     font-weight: 700;
     font-size: 18px;
+    color: white;
   }
 }
 </style>

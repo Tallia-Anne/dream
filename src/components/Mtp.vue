@@ -172,7 +172,6 @@ de l'image vers le bas */
     background-image: linear-gradient(to left, yellow 0%, orange 100%);
     box-shadow: 0 9px 25px -5px orange;
     color: white;
-
     border-radius: 6px;
     width: 160px;
     padding: 10px;
@@ -362,13 +361,12 @@ de l'image vers le bas */
     background-image: linear-gradient(to left, yellow 0%, orange 100%);
     box-shadow: 0 9px 25px -5px orange;
     color: white;
-
     border-radius: 6px;
     width: 160px;
     padding: 10px;
     border: none;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0, 15) !important;
-    margin: 37px 0 50px 0px;
+    margin: 37px 0 50px 150px;
     font-family: "Courier New", Courier, monospace;
     font-weight: 700;
     font-size: 18px;
@@ -412,6 +410,11 @@ de l'image vers le bas */
   .regform .form-detail .register {
     margin-bottom: 80px;
   }
+   /* le titre du formulaire */
+  h2 {
+    font-size: 24px;
+    text-align: center;
+  }
   /* le bloc du formulaire */
   .regform {
     background: #fff;
@@ -423,7 +426,7 @@ de l'image vers le bas */
     box-shadow: 10px 3px 10px 11px rgba(0, 0, 0, 0.75);
     margin-left: 13%;
     margin-top: 3%;
-    height: 56%;
+    height: 52%;
   }
   .regform .form-detail input {
     width: 92%;
@@ -445,13 +448,12 @@ de l'image vers le bas */
     background-image: linear-gradient(to left, yellow 0%, orange 100%);
     box-shadow: 0 9px 25px -5px orange;
     color: white;
-
     border-radius: 6px;
     width: 160px;
     padding: 10px;
     border: none;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0, 15) !important;
-    margin: 37px 0 50px 0px;
+    margin: 37px 0 50px 50px;
     font-family: "Courier New", Courier, monospace;
     font-weight: 700;
     font-size: 18px;
@@ -469,6 +471,11 @@ de l'image vers le bas */
     justify-content: center;
     align-items: center;
     background-image: url("../assets/fond.jpg");
+  }
+  /* le titre du formulaire */
+  h2 {
+    font-size: 20px;
+    text-align: center;
   }
   /* le format du formulaire */
   .regform {

@@ -36,12 +36,12 @@
           />
         </div>
         <router-link to="/reinitialiser">
-          <a class="a1" href="#">Mot de passe oublié</a>
+          <a  href="#">Mot de passe oublié</a>
         </router-link>
         <p>
           Nouveau ici?
           <router-link to="/register">
-            <a class="a2" href="#">Venez nous rejoindre</a>
+            <a  href="#">Venez nous rejoindre</a>
           </router-link>
         </p>
       </form>
@@ -195,6 +195,9 @@ de l'image vers le bas */
     font-size: 18px;
     color: white;
   }
+  a {
+    color: black;
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   /* arrière plan */
@@ -301,6 +304,9 @@ de l'image vers le bas */
     font-size: 18px;
     color: white;
   }
+  a {
+    color: black;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   /* arrière plan */
@@ -355,7 +361,7 @@ de l'image vers le bas */
     box-shadow: 10px 3px 10px 11px rgba(0, 0, 0, 0.75);
     margin-left: 13%;
     margin-top: 3%;
-    height: 66%;
+    height: 59%;
   }
   .regform .form-detail input {
     width: 92%;
@@ -381,7 +387,7 @@ de l'image vers le bas */
     padding: 10px;
     border: none;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0, 15) !important;
-    margin: 37px 0 50px 0px;
+    margin: 26px 0px 26px 151px;
     font-family: "Courier New", Courier, monospace;
     font-weight: 700;
     font-size: 18px;
@@ -392,6 +398,9 @@ de l'image vers le bas */
   }
   regform .form-detail .register:active {
     transform: translatey(5px);
+  }
+  a {
+    color: black;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767.9px) {
@@ -447,7 +456,7 @@ de l'image vers le bas */
     box-shadow: 10px 3px 10px 11px rgba(0, 0, 0, 0.75);
     margin-left: 13%;
     margin-top: 3%;
-    height: 56%;
+    height: 51%;
   }
   .regform .form-detail input {
     width: 92%;
@@ -473,7 +482,7 @@ de l'image vers le bas */
     padding: 10px;
     border: none;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0, 15) !important;
-    margin: 37px 0 50px 0px;
+    margin: 36px 0 50px 50px;
     font-family: "Courier New", Courier, monospace;
     font-weight: 700;
     font-size: 18px;
@@ -512,6 +521,7 @@ de l'image vers le bas */
   /* le titre du login */
   h2 {
     text-align: center;
+    font-size: 23px;
   }
   /* la taille de l'image */
   .regform .form-left {
@@ -543,7 +553,7 @@ de l'image vers le bas */
     box-shadow: 10px 3px 10px 11px rgba(0, 0, 0, 0.75);
     margin-left: 13%;
     margin-top: 3%;
-    height: 49%;
+    height: 45%;
   }
   .regform .form-detail input {
     width: 92%;
@@ -581,9 +591,9 @@ de l'image vers le bas */
   regform .form-detail .register:active {
     transform: translatey(5px);
   }
-  a {
+  p,a {
     color: black;
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 </style>
