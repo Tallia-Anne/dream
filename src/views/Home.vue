@@ -284,7 +284,7 @@ export default {
   .crépus img {
     display: block;
     position: relative;
-    -webkit-transition: all 0.35s;
+   
     transition: all 0.35s;
   }
   .crépus:hover img {
@@ -552,14 +552,20 @@ export default {
     font-size: 14px;
   }
   /* le bouton : je craque */
-  .default-btn {
-    background-color: yellow;
+ .default-btn {
+    background-image: linear-gradient(
+      to right,
+      #ff0084 0%,
+      #33001b 51%,
+      #ff0084 100%
+    );
     color: #fff;
     border: none;
     text-decoration: none;
     display: inline-block;
     padding: 10px 30px;
     border-radius: 30px;
+    box-shadow: 0 15px 30px 1px black;
   }
   /* =============================================================================================================== */
   /* ====================================================== SECTION 3 ========================================================= */
@@ -709,7 +715,7 @@ export default {
   .crépus img {
     display: block;
     position: relative;
-    -webkit-transition: all 0.35s;
+   
     transition: all 0.35s;
   }
   .crépus:hover img {
@@ -980,14 +986,20 @@ export default {
     font-size: 14px;
   }
   /* le bouton : je craque */
-  .default-btn {
-    background-color: yellow;
+ .default-btn {
+    background-image: linear-gradient(
+      to right,
+      #ff0084 0%,
+      #33001b 51%,
+      #ff0084 100%
+    );
     color: #fff;
     border: none;
     text-decoration: none;
     display: inline-block;
     padding: 10px 30px;
     border-radius: 30px;
+    box-shadow: 0 15px 30px 1px black;
   }
   /* =============================================================================================================== */
   /* ====================================================== SECTION 3 ========================================================= */
@@ -1160,7 +1172,7 @@ export default {
   .crépus img {
     display: block;
     position: relative;
-    -webkit-transition: all 0.35s;
+   
     transition: all 0.35s;
   }
   .crépus:hover img {
@@ -1232,7 +1244,7 @@ export default {
   .frisés img {
     display: block;
     position: relative;
-    -webkit-transition: all 0.35s;
+   
     transition: all 0.35s;
   }
   .frisés:hover img {
@@ -1304,7 +1316,7 @@ export default {
   .boucle img {
     display: block;
     position: relative;
-    -webkit-transition: all 0.35s;
+   
     transition: all 0.35s;
   }
   .boucle:hover img {
@@ -1375,7 +1387,7 @@ export default {
   .lisse img {
     display: block;
     position: relative;
-    -webkit-transition: all 0.35s;
+   
     transition: all 0.35s;
   }
   .lisse:hover img {
@@ -1515,14 +1527,20 @@ export default {
     font-size: 14px;
   }
   /* le bouton : je craque */
-  .default-btn {
-    background-color: yellow;
+ .default-btn {
+    background-image: linear-gradient(
+      to right,
+      #ff0084 0%,
+      #33001b 51%,
+      #ff0084 100%
+    );
     color: #fff;
     border: none;
     text-decoration: none;
     display: inline-block;
     padding: 10px 30px;
     border-radius: 30px;
+    box-shadow: 0 15px 30px 1px black;
   }
   /* =============================================================================================================== */
   /* ====================================================== SECTION 3 ========================================================= */
@@ -1834,7 +1852,7 @@ export default {
   .boucle img {
     display: block;
     position: relative;
-    -webkit-transition: all 0.35s;
+   
     transition: all 0.35s;
   }
   .boucle:hover img {
@@ -1905,7 +1923,7 @@ export default {
   .lisse img {
     display: block;
     position: relative;
-    -webkit-transition: all 0.35s;
+   
     transition: all 0.35s;
   }
   .lisse:hover img {
@@ -2050,14 +2068,20 @@ export default {
     font-size: 14px;
   }
   /* le bouton : je craque */
-  .default-btn {
-    background-color: yellow;
+ .default-btn {
+    background-image: linear-gradient(
+      to right,
+      #ff0084 0%,
+      #33001b 51%,
+      #ff0084 100%
+    );
     color: #fff;
     border: none;
     text-decoration: none;
     display: inline-block;
     padding: 10px 30px;
     border-radius: 30px;
+    box-shadow: 0 15px 30px 1px black;
   }
   /* =============================================================================================================== */
   /* ====================================================== SECTION 3 ========================================================= */
@@ -2353,7 +2377,7 @@ export default {
   .boucle img {
     display: block;
     position: relative;
-    -webkit-transition: all 0.35s;
+   
     transition: all 0.35s;
   }
   .boucle:hover img {
@@ -2424,7 +2448,7 @@ export default {
   .lisse img {
     display: block;
     position: relative;
-    -webkit-transition: all 0.35s;
+   
     transition: all 0.35s;
   }
   .lisse:hover img {

@@ -128,7 +128,7 @@ export default {
 <style scoped>
 @media screen and (min-width: 1280px) {
   .container {
-    widows: 100%;
+    width: 100%;
   }
   .header {
     width: 100%;
@@ -519,11 +519,11 @@ export default {
 }
 @media screen and (min-width: 480px) and (max-width: 767.9px) {
   .container {
-    widows: 100%;
+    width: 100%;
   }
   .header {
     width: 100%;
-    height: 360px;
+    height: 240px;
   }
   .container-img {
     width: 100%;
@@ -648,11 +648,11 @@ export default {
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .container {
-    widows: 100%;
+    width: 100%;
   }
   .header {
     width: 100%;
-    height: 246px;
+    height: 155px;
   }
   .container-img {
     width: 100%;

@@ -29,6 +29,10 @@
         <i class="far fa-envelope"></i>
         <span>Contact</span>
       </a>
+       <a>
+        <i class="fas fa-sign-out-alt"></i>
+        <span class="dec">Déconnexion</span>
+      </a>
     </div>
   </div>
 </template>
@@ -112,6 +116,10 @@ label #cancel {
   line-height: 45px;
   transition: all 0.5s ease;
 }
+.dec, .fa-sign-out-alt:before  {
+  color: red;
+}
+
 label #cancel {
   /* icone bars plus visibilité */
   opacity: 0;

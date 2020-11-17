@@ -214,8 +214,7 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
-    opacity: 0.88;
+    opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
     height: 105px;
@@ -337,7 +336,6 @@ export default {
   .single-publication .publication-content .price {
     font-size: 20px;
     color: gold;
-
     padding-left: 5px;
     font-weight: 300;
   }
@@ -350,7 +348,7 @@ export default {
     left: 0;
     background: #fff;
 
-    opacity: 0.88;
+    opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
     height: 105px;
@@ -461,7 +459,6 @@ export default {
   .single-publication .publication-content .price {
     font-size: 20px;
     color: gold;
-
     padding-left: 5px;
     font-weight: 300;
   }
@@ -473,8 +470,7 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
-    opacity: 0.88;
+    opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
     height: 105px;
@@ -596,8 +592,7 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
-    opacity: 0.88;
+    opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
     height: 105px;
@@ -708,7 +703,6 @@ export default {
   .single-publication .publication-content .price {
     font-size: 20px;
     color: gold;
-
     padding-left: 5px;
     font-weight: 300;
   }
@@ -720,7 +714,7 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-    opacity: 0.88;
+    opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
     height: 105px;

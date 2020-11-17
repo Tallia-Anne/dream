@@ -153,6 +153,7 @@
           </div>
         </div>
       </div>
+      
       <div class="row mt-4 d-flex align-items-center">
         <!-- Bouton acheter-->
         <div class="col-sm-6 order-md-2 text-right">

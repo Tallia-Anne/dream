@@ -248,7 +248,6 @@ export default {
     border-radius: 30px;
   }
   .produit-img:hover {
-    -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
 
@@ -410,9 +409,10 @@ export default {
   .section-header h2 {
     font-weight: bold;
     font-family: "Playfair Display", serif;
-    font-size: 64px;
+    font-size: 54px;
     margin: 0;
     padding: 7%;
+    text-align: center;
   }
   .single-publication figure {
     position: relative;
@@ -445,7 +445,6 @@ export default {
   .single-publication .publication-content .price {
     font-size: 20px;
     color: gold;
-
     padding-left: 5px;
     font-weight: 300;
   }
@@ -529,7 +528,7 @@ export default {
   .section-header h2 {
     font-weight: bold;
     font-family: "Playfair Display", serif;
-    font-size: 64px;
+    font-size: 38px;
     margin: 0;
     padding: 7%;
     text-align: center;
@@ -648,7 +647,7 @@ export default {
   .section-header h2 {
     font-weight: bold;
     font-family: "Playfair Display", serif;
-    font-size: 64px;
+    font-size: 30px;
     margin: 0;
     padding: 7%;
     text-align: center;

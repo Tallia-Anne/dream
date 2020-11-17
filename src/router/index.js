@@ -11,6 +11,7 @@ import login from "../components/login.vue";
 import reinitialiser from "../components/reinitialiser.vue";
 import Mtp from "../components/Mtp.vue";
 import register from "../components/register.vue";
+import dashboard from "../components/dashboard.vue";
 
 /////////////////////////////////////////////////////////  fin d'inscription  /////////////////////////////////////////////////////////////////////////////////
 
@@ -74,6 +75,11 @@ const routes = [{
         path: "/reinitialiser",
         name: "reinitialiser",
         component: reinitialiser,
+    },
+    {
+        path: "/dashboard",
+        name: "dashboard",
+        component: dashboard,
     },
     {
         path: "/mynavbar",

@@ -133,6 +133,7 @@ export default {
    background-color:#FCFCFC;
    box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
    border-radius: 15px;
+   margin-left: 8%;
    
 }
 .image{
@@ -300,6 +301,7 @@ export default {
     text-align: center;
    color: black;
 }
+/* le paragraphe du bloc */
 .text-trois{
   margin-bottom: 3rem;
   font-size: 20px;
@@ -336,7 +338,7 @@ export default {
    background-color:#FCFCFC;
    box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
    border-radius: 15px;
-   
+   margin-left: 8%;
 }
 .image{
    max-width: 23rem;
@@ -375,7 +377,7 @@ export default {
   margin-bottom: 3rem;
   font-size: 17px;
   color: black;
-   font-family: "Galada", cursive;
+  font-family: "Galada", cursive;
    
 }
   /* =============================================================================================================== */
@@ -632,7 +634,7 @@ export default {
   /* ==================================================== Fin de SectionDEUX ===================================================== */
 .sectionTrois {
     width: 100%;
-   height: 847px;
+   height: 987px;
   }
    .container-trois{
     padding: 71px;
@@ -775,7 +777,7 @@ export default {
   /* ==================================================== Fin de SectionDEUX ===================================================== */
 .sectionTrois {
     width: 100%;
-   height: 847px;
+   height: 885px;
   }
    .container-trois{
     padding: 71px;

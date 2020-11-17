@@ -122,7 +122,7 @@ export default {
 <style scoped>
 @media screen and (min-width: 1280px) {
   .container {
-    widows: 100%;
+    width: 100%;
   }
   .header {
     width: 100%;
@@ -388,7 +388,7 @@ export default {
   }
   .header {
     width: 100%;
-    height: 801px;
+    height: 488px;
   }
   .container-img {
     width: 100%;
@@ -509,11 +509,11 @@ export default {
 }
 @media screen and (min-width: 480px) and (max-width: 767.9px) {
   .container {
-    widows: 100%;
+    width: 100%;
   }
   .header {
     width: 100%;
-    height: 801px;
+    height: 312px;
   }
   .container-img {
     width: 100%;
@@ -633,11 +633,11 @@ export default {
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .container {
-    widows: 100%;
+    width: 100%;
   }
   .header {
     width: 100%;
-    height: 801px;
+   height: 205px;
   }
   .container-img {
     width: 100%;
@@ -645,7 +645,7 @@ export default {
   .section-header h2 {
     font-weight: bold;
     font-family: "Playfair Display", serif;
-    font-size: 34px;
+    font-size: 28px;
     margin: 0;
     padding: 7%;
     text-align: center;

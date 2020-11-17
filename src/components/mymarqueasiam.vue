@@ -218,7 +218,7 @@ export default {
     left: 0;
     background: #fff;
 
-    opacity: 0.88;
+    opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
     height: 105px;
@@ -353,7 +353,7 @@ export default {
     left: 0;
     background: #fff;
 
-    opacity: 0.88;
+    opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
     height: 105px;
@@ -477,7 +477,7 @@ export default {
     left: 0;
     background: #fff;
 
-    opacity: 0.88;
+    opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
     height: 105px;
@@ -600,7 +600,7 @@ export default {
     left: 0;
     background: #fff;
 
-    opacity: 0.88;
+    opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
     height: 105px;
@@ -724,7 +724,7 @@ export default {
     left: 0;
     background: #fff;
 
-    opacity: 0.88;
+    opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
     height: 105px;
