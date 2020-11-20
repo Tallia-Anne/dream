@@ -11,11 +11,17 @@ import login from "../components/login.vue";
 import reinitialiser from "../components/reinitialiser.vue";
 import Mtp from "../components/Mtp.vue";
 import register from "../components/register.vue";
+/////////////////////////////////////////////////////////  Nashboard d'admin  /////////////////////////////////////////////////////////////////////////////////
 import dashboard from "../components/dashboard.vue";
+import listuser from "../components/listuser.vue";
+import listproduit from "../components/listproduit.vue";
+import listcommande from "../components/listcommande.vue";
+
+/////////////////////////////////////////////////////////  Nashboard fin d'admin  /////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////  fin d'inscription  /////////////////////////////////////////////////////////////////////////////////
 
-/////////////////////////////////////////////////////////  Nashboard  /////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////  Nashboard de client  /////////////////////////////////////////////////////////////////////////////////
 import mynavbar from "../components/mynavbar.vue";
 import contact from "../components/contact.vue";
 import commande from "../components/commande.vue";
@@ -80,6 +86,21 @@ const routes = [{
         path: "/dashboard",
         name: "dashboard",
         component: dashboard,
+    },
+    {
+        path: "/listuser",
+        name: "listuser",
+        component: listuser,
+    },
+    {
+        path: "/listproduit",
+        name: "listproduit",
+        component: listproduit,
+    },
+    {
+        path: "/listcommande",
+        name: "listcommande",
+        component: listcommande,
     },
     {
         path: "/mynavbar",

@@ -143,6 +143,7 @@ export default {
   h1 {
     font-family: "Playfair Display", serif;
     padding: 4%;
+    text-align: center;
   }
   /* description du produit */
   .paragraphe1 {
@@ -202,6 +203,7 @@ export default {
   h1 {
     font-family: "Playfair Display", serif;
     padding: 4%;
+     text-align: center;
   }
   /* la description du produit */
   .paragraphe1 {
@@ -263,6 +265,7 @@ export default {
   h1 {
     font-family: "Playfair Display", serif;
     padding: 4%;
+     text-align: center;
   }
   /* description du produit */
   .paragraphe1 {
@@ -317,6 +320,7 @@ export default {
   h1 {
     font-family: "Playfair Display", serif;
     padding: 4%;
+     text-align: center;
   }
   /* la description du produit */
   .paragraphe1 {
@@ -355,12 +359,22 @@ export default {
     left: 19% !important;
     position: absolute;
   }
+  .btn {
+    background: black;
+  }
+  .btn:hover {
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 146, 202, 0.75) 0%,
+      rgba(145, 149, 251, 0.86) 100%
+    );}
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   /* le titre du produit */
   h1 {
     font-family: "Playfair Display", serif;
     padding: 4%;
+     text-align: center;
   }
   /* description du produit */
   .paragraphe1 {
@@ -399,5 +413,14 @@ export default {
     border: none;
     border-radius: 7px;
   }
+  .btn {
+    background: black;
+  }
+  .btn:hover {
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 146, 202, 0.75) 0%,
+      rgba(145, 149, 251, 0.86) 100%
+    );}
 }
 </style>

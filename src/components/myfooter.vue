@@ -113,7 +113,7 @@
             style="width: 60px"
           />
           <p><i class="fas fa-home mr-3"></i> Eragny sur Oise</p>
-          <p><i class="fas fa-envelope mr-3"></i> erinawambiekele@gmail.com</p>
+          <p><i class="fas fa-envelope mr-3"></i> contact@afro-dream.fr</p>
         
         </div>
         <!-- Grid column -->

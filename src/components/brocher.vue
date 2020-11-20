@@ -1,10 +1,12 @@
 <template>
+<!-- Inserer du fichier mybrocher -->
   <div>
     <mybrocher :produits="produits" />
   </div>
 </template>
 
 <script>
+/* importation du fichier mybricher */
 import mybrocher from "../components/mybrocher";
 export default {
   name: "brocher",

@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-12">
-          <h3 class="display-5 mb-2 text-center">Panier</h3>
+          <h3 class="display-5 mb-2 text-center">Votre panier</h3>
 
           <div class="col-sm-6 mb-3 mb-m-1 order-md-1 text-md-left">
             <a class="bouton1" href="/">
@@ -31,6 +31,7 @@
                 <td data-th="Product">
                   <div class="row">
                     <div class="col-md-3 text-left">
+                      
                       <img
                         src="https://via.placeholder.com/250x250/5fa9f8/ffffff"
                         alt
@@ -192,6 +193,16 @@ export default {
 h3 {
   font-family: "Playfair Display", serif;
   font-size: 49px;
+}
+/* l'apparence de l'entête du tableau  */
+thead {
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    color: #fff;
+}
+table {
+    border: 1px solid #bdc3c7;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
 }
 /* le bouton */
 .btn-primary {

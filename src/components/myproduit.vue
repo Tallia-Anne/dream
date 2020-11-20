@@ -247,10 +247,6 @@ export default {
     border: 3px solid #612741;
     border-radius: 30px;
   }
-  .produit-img:hover {
-    transform: scale(1.1);
-  }
-
   a:hover {
     color: #fff;
     text-decoration: none;
@@ -370,9 +366,6 @@ export default {
   .single-publication:hover {
     border: 3px solid #612741;
     border-radius: 30px;
-  }
-  .produit-img:hover {
-    transform: scale(1.5);
   }
   a:hover {
     color: #fff;

@@ -131,7 +131,7 @@ export default {
    max-width: 70rem;
    padding: 4rem;
    background-color:#FCFCFC;
-   box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
+   box-shadow: 1px 1px 12px #555;
    border-radius: 15px;
    margin-left: 8%;
    
@@ -159,7 +159,7 @@ export default {
   position:absolute;
   top:0;
   left:0;
-  box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
+  box-shadow: 1px 1px 12px #555;
   border-radius: 10px;
 }
 
@@ -263,7 +263,7 @@ export default {
    max-width: 70rem;
    padding: 4rem;
    background-color:#FCFCFC;
-   box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
+   box-shadow: 1px 1px 12px #555;
    border-radius: 15px;
    margin-left: 8%;
    
@@ -291,7 +291,7 @@ export default {
   position:absolute;
   top:0;
   left:0;
-  box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
+  box-shadow: 1px 1px 12px #555;
   border-radius: 10px;
 }
 
@@ -316,7 +316,7 @@ export default {
    font-size: 20px;
    color: #fff;
   background-image: linear-gradient(to left, yellow 0%, orange 100%);
-  box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
+  box-shadow: 1px 1px 12px #555;
    border-radius: 10px;
    border: 1px solid yellow;
    text-decoration: none;
@@ -336,7 +336,7 @@ export default {
    max-width: 70rem;
    padding: 4rem;
    background-color:#FCFCFC;
-   box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
+   box-shadow: 1px 1px 12px #555;
    border-radius: 15px;
    margin-left: 8%;
 }
@@ -363,7 +363,7 @@ export default {
   position:absolute;
   top:0;
   left:0;
-  box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
+  box-shadow: 1px 1px 12px #555;
   border-radius: 10px;
 }
 
@@ -426,31 +426,37 @@ export default {
     background-color: yellow;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c2 {
     background-color: #ffff99;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c3 {
     background-color: #ffcc99;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c4 {
     background-color: #cc9999;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c5 {
     background-color: #cc3333;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c6 {
     background-color: #ff99cc;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   /* =============================================================================================================== */
   /* ==================================================== Fin de SectionDEUX ===================================================== */
@@ -467,7 +473,7 @@ export default {
    max-width: 70rem;
    padding: 4rem;
    background-color:#FCFCFC;
-   box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
+   box-shadow: 1px 1px 12px #555;
    border-radius: 15px;
    margin-left: 8%;
    
@@ -495,7 +501,7 @@ export default {
   position:absolute;
   top:0;
   left:0;
-  box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
+  box-shadow: 1px 1px 12px #555;
   border-radius: 10px;
 }
 
@@ -519,7 +525,7 @@ export default {
    font-size: 20px;
    color: #fff;
   background-image: linear-gradient(to left, yellow 0%, orange 100%);
-  box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
+  box-shadow: 1px 1px 12px #555;
    border-radius: 10px;
    border: 1px solid yellow;
    text-decoration: none;
@@ -529,11 +535,8 @@ export default {
   color: yellow;
   transition-delay: 100ms;
 }
-}
-@media (max-width: 869px) {
-   .container{
-     max-width: 50rem;
-   }
+
+
  }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -545,7 +548,7 @@ export default {
     padding: 71px;
     flex-direction: column;
     background-color: #FCFCFC;
-    box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
+    box-shadow: 1px 1px 12px #555;
     border-radius: 15px;
     width: 88%;
    }
@@ -604,31 +607,37 @@ export default {
     background-color: yellow;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c2 {
     background-color: #ffff99;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c3 {
     background-color: #ffcc99;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c4 {
     background-color: #cc9999;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c5 {
     background-color: #cc3333;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c6 {
     background-color: #ff99cc;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   /* =============================================================================================================== */
   /* ==================================================== Fin de SectionDEUX ===================================================== */
@@ -640,7 +649,7 @@ export default {
     padding: 71px;
     flex-direction: column;
     background-color: #FCFCFC;
-    box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
+    box-shadow: 1px 1px 12px #555;
     border-radius: 15px;
     width: 88%;
     margin-left: 6%;
@@ -667,7 +676,7 @@ export default {
    font-size: 20px;
    color: #fff;
   background-image: linear-gradient(to left, yellow 0%, orange 100%);
-  box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
+  box-shadow: 1px 1px 12px #555;
    border-radius: 10px;
    border: 1px solid yellow;
    text-decoration: none;
@@ -687,7 +696,7 @@ export default {
     padding: 71px;
     flex-direction: column;
     background-color: #FCFCFC;
-    box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
+    box-shadow: 1px 1px 12px #555;
     border-radius: 15px;
     width: 88%;
    }
@@ -740,38 +749,43 @@ export default {
     text-align: center;
     font-size: 1.2rem;
     width: 91%;
-
     color: #ffffff;
   }
   .c1 {
     background-color: yellow;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c2 {
     background-color: #ffff99;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c3 {
     background-color: #ffcc99;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c4 {
     background-color: #cc9999;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c5 {
     background-color: #cc3333;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c6 {
     background-color: #ff99cc;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   /* =============================================================================================================== */
   /* ==================================================== Fin de SectionDEUX ===================================================== */
@@ -783,7 +797,7 @@ export default {
     padding: 71px;
     flex-direction: column;
     background-color: #FCFCFC;
-    box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
+    box-shadow: 1px 1px 12px #555;
     border-radius: 15px;
     width: 88%;
     margin-left: 6%;
@@ -810,7 +824,7 @@ export default {
    font-size: 20px;
    color: #fff;
   background-image: linear-gradient(to left, yellow 0%, orange 100%);
-  box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
+  box-shadow: 1px 1px 12px #555;
    border-radius: 10px;
    border: 1px solid yellow;
    text-decoration: none;
@@ -830,7 +844,7 @@ export default {
     padding: 71px;
     flex-direction: column;
     background-color: #FCFCFC;
-    box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
+    box-shadow: 1px 1px 12px #555;
     border-radius: 15px;
     width: 88%;
    }
@@ -870,7 +884,6 @@ export default {
   }
   .auto-grid {
     --auto-grid-min-size: 16rem;
-
     display: grid;
     grid-template-columns: repeat(
       auto-fill,
@@ -883,38 +896,43 @@ export default {
     text-align: center;
     font-size: 1.2rem;
     width: 91%;
-
     color: #ffffff;
   }
   .c1 {
     background-color: yellow;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c2 {
     background-color: #ffff99;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c3 {
     background-color: #ffcc99;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c4 {
     background-color: #cc9999;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c5 {
     background-color: #cc3333;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   .c6 {
     background-color: #ff99cc;
     border-radius: 11px;
     font-family: "Galada", cursive;
+    box-shadow: 1px 1px 12px #555;
   }
   /* =============================================================================================================== */
   /* ==================================================== Fin de SectionDEUX ===================================================== */
@@ -926,7 +944,7 @@ export default {
     padding: 71px;
     flex-direction: column;
     background-color: #FCFCFC;
-    box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
+    box-shadow: 1px 1px 12px #555;
     border-radius: 15px;
     width: 88%;
     margin-left: 6%;
@@ -940,7 +958,6 @@ export default {
    .image-trois{
    min-width: 80%;
     transform: translate(0, -3rem);
-
  }
  .image-trois img {
    width: 100%;
@@ -953,7 +970,7 @@ export default {
    font-size: 20px;
    color: #fff;
   background-image: linear-gradient(to left, yellow 0%, orange 100%);
-  box-shadow: 16px 12px 15px 1px rgba(0,0,0,0.23);
+  box-shadow: 1px 1px 12px #555;
    border-radius: 10px;
    border: 1px solid yellow;
    text-decoration: none;

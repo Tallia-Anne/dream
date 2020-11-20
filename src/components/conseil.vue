@@ -190,6 +190,10 @@ export default {
 a {
   text-decoration: none;
 }
+/* les liens */
+a:hover {
+  text-decoration: none;
+}
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .wrap {
@@ -248,6 +252,14 @@ a {
     margin-bottom: 1rem;
     margin-top: 1rem;
   }
+  /* les liens */
+a {
+  text-decoration: none;
+}
+/* les liens */
+a:hover {
+  text-decoration: none;
+}
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
@@ -259,16 +271,40 @@ a {
   .portfolio_images_overlay {
     padding: 170px 20px;
   }
+  /* les liens */
+a {
+  text-decoration: none;
+}
+/* les liens */
+a:hover {
+  text-decoration: none;
+}
 }
 
 @media screen and (min-width: 480px) and (max-width: 767.9px) {
   .portfolio_images_overlay {
     padding: 40px 20px;
   }
+  /* les liens */
+a {
+  text-decoration: none;
+}
+/* les liens */
+a:hover {
+  text-decoration: none;
+}
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .portfolio_images_overlay {
     padding: 20px;
   }
+  /* les liens */
+a {
+  text-decoration: none;
+}
+/* les liens */
+a:hover {
+  text-decoration: none;
+}
 }
 </style>
