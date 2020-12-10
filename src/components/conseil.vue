@@ -62,7 +62,7 @@
             <div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
               <img src="../assets/5f493e28e31c4.jpg" alt="img17" />
               <div class="portfolio_images_overlay text-center">
-                <h6>Coiffure</h6>
+               <a href="/search"><h6>Recherche de produit</h6></a>
               </div>
             </div>
             <div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">

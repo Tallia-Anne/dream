@@ -6,8 +6,8 @@
     <div id="container">
       <h2>Newsletter</h2>
       <p>Veuillez entrer votre adresse e-mail pour recevoir les nouvelles.</p>
-      <form>
-        <input type="email" placeholder="Entrer votre email" required />
+      <form  @submit.prevent="donewsletter"  >
+        <input type="email" name="" placeholder="Entrer votre email" required v-model="email" />
 
         <button><i class="fas fa-envelope"></i> Newsletter</button>
       </form>
@@ -16,7 +16,28 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "newsletter",
+  components: {},
+  data() {
+    return {
+      email: "",
+    }
+  },
+  methods: {
+    donewsletter: function() {
+      this.axios.post("http://localhost:3000/newsletter/sendnewsletter", {
+        email: this.email,
+      })
+      .then((result) => {
+          alert(result);
+        })
+        .catch((err) => {
+          alert(err);
+        });
+    },
+  },
+};
 </script>
 
 <style scoped>

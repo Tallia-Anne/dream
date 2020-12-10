@@ -1,124 +1,31 @@
 <template>
-  <div class="wrap">
-    <mynavbar />
-    <div class="container emp-profile">
-      <form>
-        <div class="row">
-          <div class="col-md-4">
-            <!-- Parti1 -->
-            <div class="profile-img">
-              <img src="../assets/0.jpg" alt />
-              <div class="file btn btn-lg btn-primary">
-                Change Photo
-                <!-- permet d'inserer la photo  -->
-                <input type="file" name="file" />
-              </div>
-            </div>
-            <!--  fin de Parti1 -->
-          </div>
-          <!-- Parti2 -->
-          <div class="col-md-6">
-            <div v-for="client in client" :key="client.id" class="profile-head">
-              <h5>{{ client.prenom }}</h5>
-
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    id="home-tab"
-                    data-toggle="tab"
-                    role="tab"
-                    aria-controls="home"
-                    aria-selected="true"
-                  >
-                    <i class="fa fa-user icon"></i> Profil
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- Fin de Parti2 -->
-          <!-- Parti3 -->
-          <div class="col-md-2">
-            <button class="profile-edit-btn" name="btnAddMore">
-              <a href="/profile">Modifier son profil</a>
-            </button>
-          </div>
-        </div>
-        <!-- Parti4 -->
-        <div class="row">
-          <div class="col-md-8">
-            <div class="tab-content profile-tab" id="myTabContent">
-              <div
-                class="tab-pane fade show active"
-                id="home"
-                role="tabpanel"
-                aria-labelledby="home-tab"
-              >
-                <div class="row">
-                  <div class="col-md-6">
-                    <label>Prénom:</label>
-                  </div>
-                  <div class="col-md-6">
-                    <p>{{ client.prenom }}</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <label>Nom:</label>
-                  </div>
-                  <div class="col-md-6">
-                    <p>{{ client.nom }}</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <label>Ville:</label>
-                  </div>
-                  <div class="col-md-6">
-                    <p>{{ client.ville }}</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <label>Adresse:</label>
-                  </div>
-                  <div class="col-md-6">
-                    <p>{{ client.adresse }}</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <label>2eme Adresse:</label>
-                  </div>
-                  <div class="col-md-6">
-                    <p>......</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <label>Adresse email:</label>
-                  </div>
-                  <div class="col-md-6">
-                    <p>{{ client.email }}</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <label>Téléphone:</label>
-                  </div>
-                  <div class="col-md-6">
-                    <p>{{ client.tel }}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Parti4 -->
-      </form>
-    </div>
-  </div>
+  <div class="arrière" >
+      <mynavbar />
+<div class="card">
+   <div class="banner">
+     
+   </div>
+   <div class="info">
+      <h1 class="name" style="display: inline">NomPrénom</h1>
+      <div class="details">
+          <h4> Ville</h4>
+          <h4> Nomuser</h4>
+          <h4> Adresse</h4>
+         <h4> Adresse </h4>
+         <h4> cp</h4>
+         <h4> 12</h4>
+          <h4> Numéro de téléphone</h4>
+         <h4> +966537118696</h4>
+         <h4> Adresse mail</h4>
+         <h4>cascocode@gmail.com</h4>
+      </div>
+      <div>
+          <a href="/profile"><button> Modifier</button></a>
+            
+      </div>
+   </div>
+</div>
+</div>
 </template>
 
 <script>
@@ -150,432 +57,312 @@ export default {
 
 <style scoped>
 @media screen and (min-width: 1280px) {
-  /* ----------------------------------------------------   Parti1   ------------------------------------------------------------------------- */
-  /* l'image du fond: arrière-plan */
-  .wrap {
-    background-image: url("../assets/fond.jpg");
-    background-repeat: no-repeat;
+ .arrière {
+    background-image: url("https://img.freepik.com/photos-gratuite/vue-dessus-bouteille-noix-coco-tranches-orance_23-2148305477.jpg?size=626&ext=jpg&ga=GA1.2.1033970166.1585772392");
+     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 133vh;
     position: absolute;
-  }
-  /* le bloc */
-  .emp-profile {
-    padding: 3%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    border-radius: 0.5rem;
-    background: #fff;
-  }
-  .profile-img {
-    text-align: center;
-  }
-  .profile-img img {
-    width: 70%;
-    height: 100%;
-  }
-  /* l'emplacement file(inserer une photo) */
-  .profile-img .file {
-    position: relative;
-    overflow: hidden;
-    margin-top: -20%;
-    width: 70%;
-    border: none;
-    border-radius: 0;
-    font-size: 15px;
-    background: #212529b8;
-  }
-  .profile-img .file input {
-    position: absolute;
-    opacity: 0;
-    right: 0;
-    top: 0;
-  }
-  /* ----------------------------------------------------   Fin de Parti1   ------------------------------------------------------------------------- */
+    margin-top: 2%;
+}
+.card {
+	margin: 50px auto;
+	background: #ffffff;
+	border: #c2c2c2;
+	border-radius: 9px;
+	padding: 9px;
+	text-align: center;
+	width: 500px;
+	box-shadow: 3px 2px 9px 0px rgba(80, 63, 63, 0.62);
+	transition: width .6s;
+}
 
-  /* ----------------------------------------------------   Fin de Parti2   ------------------------------------------------------------------------- */
-  /* Le nom de l'utilisateur */
-  .profile-head h5 {
-    font-family: "Playfair Display", serif;
-    color: #333;
-  }
-  /* ----------------------------------------------------   Fin de Parti2   ------------------------------------------------------------------------- */
-  /* ----------------------------------------------------   Parti3   ------------------------------------------------------------------------- */
-  /*le bouton */
-  .profile-edit-btn {
-    border: none;
+.card .banner {
+	background-image: url("https://image.freepik.com/photos-gratuite/rose-fleurs-violettes_1203-2191.jpg");
+	height: 125px;
+}
+
+.card .info {
+	padding-top: 48px;
+	background: #FCD6EA;
+}
+
+.card .info .details {
+	text-align: left;
+	color: #ff8838;
+	padding: 1px 29px;
+}
+
+  /* l'apparence du bouton */
+   button {
+   background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    box-shadow: 0 9px 25px -5px #D41872;
+    font-family: "Abel", sans-serif;
+    padding: 0.5em 1.9em;
+    margin: 39px 0 0 0;
     border-radius: 7px;
-    width: 78%;
-    height: 30%;
-    font-size: 16px;
-    background: #740040;
-    font-weight: 600;
+    font-size: 1.4em;
     cursor: pointer;
-  }
-  /* le lien du bouton */
-  .profile-edit-btn a {
-    color: white;
-    font-size: 15px;
-  }
-  /* ----------------------------------------------------   Fin de Parti3   ------------------------------------------------------------------------- */
-  /* ----------------------------------------------------   Parti4   ------------------------------------------------------------------------- */
-
-  .profile-head .nav-tabs {
-    margin-bottom: 5%;
-  }
-  .profile-head .nav-tabs .nav-link {
-    font-weight: 600;
+    color: #ffffff;
+    outline: none;
     border: none;
+    transition: 0.3s linear;
   }
-  .profile-head .nav-tabs .nav-link.active {
-    border: none;
-    border-bottom: 4px solid #740040;
+   button:hover {
+    transform: translatey(2px);
   }
-
-  .profile-tab label {
-    font-weight: 600;
-  }
-
-  .profile-tab p {
-    font-weight: 600;
-    color: black;
+   button:active {
+    transform: translatey(5px);
   }
 
   /* ----------------------------------------------------   Fin de Parti4   ------------------------------------------------------------------------- */
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   /* ----------------------------------------------------   Parti1   ------------------------------------------------------------------------- */
-  /* l'image du fond: arrière-plan */
-  .wrap {
-    background-image: url("../assets/fond.jpg");
-    background-repeat: no-repeat;
+  .arrière {
+    background-image: url("https://img.freepik.com/photos-gratuite/vue-dessus-bouteille-noix-coco-tranches-orance_23-2148305477.jpg?size=626&ext=jpg&ga=GA1.2.1033970166.1585772392");
+     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 642px;
+    height: 133vh;
     position: absolute;
-  }
-  /* bloc de blanc  */
-  .emp-profile {
-    padding: 3%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    border-radius: 0.5rem;
-    background: #fff;
-  }
-  .profile-img {
-    text-align: center;
-  }
-  .profile-img img {
-    width: 70%;
-    height: 100%;
-  }
+    margin-top: 2%;
+}
+.card {
+	margin: 50px auto;
+	background: #ffffff;
+	border: #c2c2c2;
+	border-radius: 9px;
+	padding: 9px;
+	text-align: center;
+	width: 500px;
+	box-shadow: 3px 2px 9px 0px rgba(80, 63, 63, 0.62);
+	transition: width .6s;
+}
 
-  .profile-img .file {
-    position: relative;
-    overflow: hidden;
-    margin-top: -20%;
-    width: 70%;
-    border: none;
-    border-radius: 0;
-    font-size: 15px;
-    background: #212529b8;
-  }
-  /* placement input:file  */
-  .profile-img .file input {
-    position: absolute;
-    opacity: 0;
-    right: 0;
-    top: 0;
-  }
-  /* ----------------------------------------------------   Fin de Parti1   ------------------------------------------------------------------------- */
-  .profile-head h5 {
-    font-family: "Playfair Display", serif;
-    color: #333;
-  }
-  /* ----------------------------------------------------   Parti3   ------------------------------------------------------------------------- */
-  /* le bouton */
-  .profile-edit-btn {
-    border: none;
+.card .banner {
+	background-image: url("https://image.freepik.com/photos-gratuite/rose-fleurs-violettes_1203-2191.jpg");
+	height: 125px;
+}
+
+.card .info {
+	padding-top: 48px;
+	background: #FCD6EA;
+}
+
+.card .info .details {
+	text-align: left;
+	color: #ff8838;
+	padding: 1px 29px;
+}
+
+  /* l'apparence du bouton */
+   button {
+   background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    box-shadow: 0 9px 25px -5px #D41872;
+    font-family: "Abel", sans-serif;
+    padding: 0.5em 1.9em;
+    margin: 39px 0 0 0;
     border-radius: 7px;
-    width: 78%;
-    height: 33%;
-    font-size: 16px;
-    background: #740040;
-    font-weight: 600;
-    color: white;
+    font-size: 1.4em;
     cursor: pointer;
-  }
-  /* le lien du  bouton */
-  .profile-edit-btn a {
-    color: white;
-  }
-  /* ----------------------------------------------------   Fin de Parti3   ------------------------------------------------------------------------- */
-  /* ----------------------------------------------------   Parti4   ------------------------------------------------------------------------- */
-
-  .profile-head .nav-tabs {
-    margin-bottom: 5%;
-  }
-  .profile-head .nav-tabs .nav-link {
-    font-weight: 600;
+    color: #ffffff;
+    outline: none;
     border: none;
+    transition: 0.3s linear;
   }
-  .profile-head .nav-tabs .nav-link.active {
-    border: none;
-    border-bottom: 4px solid #740040;
+   button:hover {
+    transform: translatey(2px);
   }
-
-  .profile-tab label {
-    font-weight: 600;
-  }
-  .profile-tab p {
-    font-weight: 600;
-    color: black;
+   button:active {
+    transform: translatey(5px);
   }
   /* ----------------------------------------------------   Parti4   ------------------------------------------------------------------------- */
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .wrap {
-    background-image: url("../assets/fond.jpg");
-    background-repeat: no-repeat;
+  .arrière {
+    background-image: url("https://img.freepik.com/photos-gratuite/vue-dessus-bouteille-noix-coco-tranches-orance_23-2148305477.jpg?size=626&ext=jpg&ga=GA1.2.1033970166.1585772392");
+     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 133vh;
     position: absolute;
-  }
+    margin-top: 2%;
+}
+.card {
+	margin: 50px auto;
+	background: #ffffff;
+	border: #c2c2c2;
+	border-radius: 9px;
+	padding: 9px;
+	text-align: center;
+	width: 500px;
+	box-shadow: 3px 2px 9px 0px rgba(80, 63, 63, 0.62);
+	transition: width .6s;
+}
 
-  .emp-profile {
-    padding: 3%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    border-radius: 0.5rem;
-    background: #fff;
-  }
-  .profile-img {
-    text-align: center;
-  }
-  .profile-img img {
-    width: 70%;
-    height: 100%;
-  }
-  .profile-img .file {
-    position: relative;
-    overflow: hidden;
-    margin-top: -20%;
-    width: 70%;
-    border: none;
-    border-radius: 0;
-    font-size: 15px;
-    background: #212529b8;
-  }
-  .profile-img .file input {
-    position: absolute;
-    opacity: 0;
-    right: 0;
-    top: 0;
-  }
-  .profile-head h5 {
-    font-family: "Playfair Display", serif;
-    color: #333;
-  }
+.card .banner {
+	background-image: url("https://image.freepik.com/photos-gratuite/rose-fleurs-violettes_1203-2191.jpg");
+	height: 125px;
+}
 
-  .profile-edit-btn {
-    border: none;
+.card .info {
+	padding-top: 48px;
+	background: #FCD6EA;
+}
+
+.card .info .details {
+	text-align: left;
+	color: #ff8838;
+	padding: 1px 29px;
+}
+
+  /* l'apparence du bouton */
+   button {
+   background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    box-shadow: 0 9px 25px -5px #D41872;
+    font-family: "Abel", sans-serif;
+    padding: 0.5em 1.9em;
+    margin: 39px 0 0 0;
     border-radius: 7px;
-    width: 88%;
-    height: 43%;
-    font-size: 16px;
-    background: #740040;
-    font-weight: 600;
+    font-size: 1.4em;
     cursor: pointer;
-  }
-  .profile-edit-btn a {
-    color: white;
-  }
-  .profile-head .nav-tabs {
-    margin-bottom: 5%;
-  }
-  .profile-head .nav-tabs .nav-link {
-    font-weight: 600;
+    color: #ffffff;
+    outline: none;
     border: none;
+    transition: 0.3s linear;
   }
-  .profile-head .nav-tabs .nav-link.active {
-    border: none;
-    border-bottom: 4px solid #740040;
+   button:hover {
+    transform: translatey(2px);
   }
-
-  .profile-tab label {
-    font-weight: 600;
-  }
-  .profile-tab p {
-    font-weight: 600;
-    color: black;
+   button:active {
+    transform: translatey(5px);
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767.9px) {
-  .wrap {
-    background-image: url("../assets/fond.jpg");
-    background-repeat: no-repeat;
+ .arrière {
+    background-image: url("https://img.freepik.com/photos-gratuite/vue-dessus-bouteille-noix-coco-tranches-orance_23-2148305477.jpg?size=626&ext=jpg&ga=GA1.2.1033970166.1585772392");
+     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 133vh;
     position: absolute;
-  }
+    margin-top: 2%;
+}
+.card {
+	margin: 50px auto;
+	background: #ffffff;
+	border: #c2c2c2;
+	border-radius: 9px;
+	padding: 9px;
+	text-align: center;
+	width: 500px;
+	box-shadow: 3px 2px 9px 0px rgba(80, 63, 63, 0.62);
+	transition: width .6s;
+}
 
-  .emp-profile {
-    padding: 3%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    border-radius: 0.5rem;
-    background: #fff;
-    height: 798px;
-    width: 56%;
-  }
-  .profile-img {
-    text-align: center;
-  }
-  .profile-img img {
-    width: 70%;
-    height: 100%;
-  }
-  .profile-img .file {
-    position: relative;
-    overflow: hidden;
-    margin-top: -20%;
-    width: 70%;
-    border: none;
-    border-radius: 0;
-    font-size: 15px;
-    background: #212529b8;
-  }
-  .profile-img .file input {
-    position: absolute;
-    opacity: 0;
-    right: 0;
-    top: 0;
-  }
-  .profile-head h5 {
-    font-family: "Playfair Display", serif;
-    color: #333;
-  }
+.card .banner {
+	background-image: url("https://image.freepik.com/photos-gratuite/rose-fleurs-violettes_1203-2191.jpg");
+	height: 125px;
+}
 
-  .profile-edit-btn {
-    border: none;
+.card .info {
+	padding-top: 48px;
+	background: #FCD6EA;
+}
+
+.card .info .details {
+	text-align: left;
+	color: #ff8838;
+	padding: 1px 29px;
+}
+
+  /* l'apparence du bouton */
+   button {
+   background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    box-shadow: 0 9px 25px -5px #D41872;
+    font-family: "Abel", sans-serif;
+    padding: 0.5em 1.9em;
+    margin: 39px 0 0 0;
     border-radius: 7px;
-    width: 78%;
-    height: 33%;
-    font-size: 16px;
-    background: #740040;
-    font-weight: 600;
-    color: white;
+    font-size: 1.4em;
     cursor: pointer;
-  }
-
-  .profile-head .nav-tabs {
-    margin-bottom: 5%;
-  }
-  .profile-head .nav-tabs .nav-link {
-    font-weight: 600;
+    color: #ffffff;
+    outline: none;
     border: none;
+    transition: 0.3s linear;
   }
-  .profile-head .nav-tabs .nav-link.active {
-    border: none;
-    border-bottom: 4px solid #740040;
+   button:hover {
+    transform: translatey(2px);
   }
-
-  .profile-tab label {
-    font-weight: 600;
-  }
-  .profile-tab p {
-    font-weight: 600;
-    color: black;
+   button:active {
+    transform: translatey(5px);
   }
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
-  .wrap {
-    background-image: url("../assets/fond.jpg");
-    background-repeat: no-repeat;
+ .arrière {
+    background-image: url("https://img.freepik.com/photos-gratuite/vue-dessus-bouteille-noix-coco-tranches-orance_23-2148305477.jpg?size=626&ext=jpg&ga=GA1.2.1033970166.1585772392");
+     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 133vh;
     position: absolute;
-  }
+    margin-top: 2%;
+}
+.card {
+	margin: 50px auto;
+	background: #ffffff;
+	border: #c2c2c2;
+	border-radius: 9px;
+	padding: 9px;
+	text-align: center;
+	width: 500px;
+	box-shadow: 3px 2px 9px 0px rgba(80, 63, 63, 0.62);
+	transition: width .6s;
+}
 
-  .emp-profile {
-    padding: 3%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    border-radius: 0.5rem;
-    background: #fff;
-    height: 798px;
-    width: 56%;
-  }
-  .profile-img {
-    text-align: center;
-  }
-  .profile-img img {
-    width: 70%;
-    height: 100%;
-  }
-  .profile-img .file {
-    position: relative;
-    overflow: hidden;
-    margin-top: -20%;
-    width: 70%;
-    border: none;
-    border-radius: 0;
-    font-size: 15px;
-    background: #212529b8;
-  }
-  .profile-img .file input {
-    position: absolute;
-    opacity: 0;
-    right: 0;
-    top: 0;
-  }
-  .profile-head h5 {
-    font-family: "Playfair Display", serif;
-    color: #333;
-  }
+.card .banner {
+	background-image: url("https://image.freepik.com/photos-gratuite/rose-fleurs-violettes_1203-2191.jpg");
+	height: 125px;
+}
 
-  .profile-edit-btn {
-    border: none;
+.card .info {
+	padding-top: 48px;
+	background: #FCD6EA;
+}
+
+.card .info .details {
+	text-align: left;
+	color: #ff8838;
+	padding: 1px 29px;
+}
+
+  /* l'apparence du bouton */
+   button {
+   background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    box-shadow: 0 9px 25px -5px #D41872;
+    font-family: "Abel", sans-serif;
+    padding: 0.5em 1.9em;
+    margin: 39px 0 0 0;
     border-radius: 7px;
-    width: 88%;
-    height: 49px;
-    font-size: 16px;
-    background: #740040;
-    font-weight: 600;
+    font-size: 1.4em;
     cursor: pointer;
-  }
-  .profile-edit-btn a {
-    color: white;
-  }
-
-  .profile-head .nav-tabs {
-    margin-bottom: 5%;
-  }
-  .profile-head .nav-tabs .nav-link {
-    font-weight: 600;
+    color: #ffffff;
+    outline: none;
     border: none;
+    transition: 0.3s linear;
   }
-  .profile-head .nav-tabs .nav-link.active {
-    border: none;
-    border-bottom: 4px solid #740040;
+   button:hover {
+    transform: translatey(2px);
   }
-
-  .profile-tab label {
-    font-weight: 600;
-  }
-  .profile-tab p {
-    font-weight: 600;
-    color: black;
-    font-size: 12px;
+   button:active {
+    transform: translatey(5px);
   }
 }
 </style>

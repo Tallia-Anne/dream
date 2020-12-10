@@ -2,7 +2,7 @@
 <div>
     <section id="sidebar">
       <section class="title-container">
-       <img class="logo" src="../assets/Afro dream1.png" alt="mon img" />
+       <img class="logo" src="../../assets/Afro dream1.png" alt="mon img" width="190" />
         <h1>Afro-dream</h1>
       </section>
       <section class="links-container">
@@ -10,7 +10,7 @@
           <div class="icon">
             <i class="fas fa-home"></i>
           </div>
-          <a href="/dashboard"><h3>Dashboard</h3></a>
+          <a href="/admin/dashboard"><h3>Dashboard</h3></a>
         </div>
         <div class="links">
           <div class="icon">

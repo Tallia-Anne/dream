@@ -101,6 +101,9 @@
           <p>
             <a href="/newsletter">Newsletter</a>
           </p>
+           <p>
+            <a href="/contact">Contact</a>
+          </p>
         </div>
         <!-- Grid column -->
 

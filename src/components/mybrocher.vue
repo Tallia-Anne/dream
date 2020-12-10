@@ -32,7 +32,7 @@
             </div>
             <div class="add-to-cart">
               <a
-                @click="ajouter(produit.id, produit.nom, produit.prix)"
+                @click="ajouter(produit.id, produit.nom, produit.prix, produit.Images[0].image)"
                 class="default-btn"
                 >Je craque</a
               >
@@ -63,7 +63,7 @@ export default {
   },
   methods: {
     // de créer un panier
-    ajouter: function (id, nom, prix) {
+    ajouter: function (id, nom, prix, image) {
       alert(` le produit ${nom}`);
       this.Panier = this.Panier || [];
       localStorage.removeItem("panier");
@@ -76,6 +76,7 @@ export default {
           quantite: quantite,
           prix_unitaire: prix,
           soustotal: quantite * prix,
+          image: image,
         });
       } else {
         // le panier existe déjà
@@ -99,6 +100,7 @@ export default {
             quantite: quantite,
             prix_unitaire: prix,
             soustotal: quantite * prix,
+            image: image,
           });
         }
       }
@@ -235,6 +237,7 @@ export default {
   .single-publication:hover {
     border: 3px solid #612741;
     border-radius: 30px;
+	box-shadow: 2px 2px 5px black;
   }
 
   a:hover {
@@ -367,10 +370,12 @@ export default {
   .single-publication:hover {
     border: 3px solid #612741;
     border-radius: 30px;
+	box-shadow: 2px 2px 5px black;
   }
   .single-publication:hover {
     border: 3px solid #612741;
     border-radius: 30px;
+	box-shadow: 2px 2px 5px black;
   }
   a:hover {
     color: #fff;
@@ -493,6 +498,7 @@ export default {
   .single-publication:hover {
     border: 3px solid #612741;
     border-radius: 30px;
+	box-shadow: 2px 2px 5px black;
   }
   a:hover {
     color: #fff;
@@ -616,6 +622,7 @@ export default {
   .single-publication:hover {
     border: 3px solid #612741;
     border-radius: 30px;
+	box-shadow: 2px 2px 5px black;
   }
   a:hover {
     color: #fff;
@@ -739,6 +746,7 @@ export default {
   .single-publication:hover {
     border: 3px solid #612741;
     border-radius: 30px;
+	box-shadow: 2px 2px 5px black;
   }
   a:hover {
     color: #fff;

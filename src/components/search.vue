@@ -224,6 +224,7 @@ export default {
   .single-publication:hover {
     border: 3px solid #612741;
     border-radius: 30px;
+	box-shadow: 2px 2px 5px black;
   }
   a:hover {
     color: #fff;
@@ -380,6 +381,7 @@ export default {
   .single-publication:hover {
     border: 3px solid #612741;
     border-radius: 30px;
+	box-shadow: 2px 2px 5px black;
   }
 
   a:hover {
@@ -526,6 +528,7 @@ export default {
   .single-publication:hover {
     border: 3px solid #612741;
     border-radius: 30px;
+	box-shadow: 2px 2px 5px black;
   }
   a:hover {
     color: #fff;
@@ -672,10 +675,12 @@ export default {
   .single-publication:hover {
     border: 3px solid #612741;
     border-radius: 30px;
+	box-shadow: 2px 2px 5px black;
   }
   .single-publication:hover {
     border: 3px solid #612741;
     border-radius: 30px;
+	box-shadow: 2px 2px 5px black;
   }
   a:hover {
     color: #fff;
@@ -824,10 +829,12 @@ export default {
   .single-publication:hover {
     border: 3px solid #612741;
     border-radius: 30px;
+	box-shadow: 2px 2px 5px black;
   }
   .single-publication:hover {
     border: 3px solid #612741;
     border-radius: 30px;
+	box-shadow: 2px 2px 5px black;
   }
   a:hover {
     color: #fff;

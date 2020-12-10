@@ -62,7 +62,7 @@ export default {
   methods: {
     dologin: function () {
       this.axios
-        .post(this.$apiurl + "client/login" , {
+        .post("http://localhost:3000/client/login", {
           email: this.emaillogin,
           password: this.passwordlogin,
         })
@@ -307,6 +307,10 @@ de l'image vers le bas */
   a {
     color: black;
   }
+   a:hover {
+    color: black;
+    text-decoration: none;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   /* arrière plan */
@@ -401,6 +405,10 @@ de l'image vers le bas */
   }
   a {
     color: black;
+  }
+   a:hover {
+    color: black;
+    text-decoration: none;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767.9px) {
@@ -498,6 +506,10 @@ de l'image vers le bas */
     color: black;
     font-size: 13px;
   }
+   a:hover {
+    color: black;
+    text-decoration: none;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   /* arrière plan */
@@ -594,6 +606,10 @@ de l'image vers le bas */
   p,a {
     color: black;
     font-size: 11px;
+  }
+   a:hover {
+    color: black;
+    text-decoration: none;
   }
 }
 </style>

@@ -14,7 +14,7 @@
                              <!-- début tête du tableau  -->
                             <thead>
                                 <tr>
-                                <th><span>Numéro de la commande </span></th>
+                                <th><span>l'idientifiant de la commande </span></th>
                                 <th><span>Date de commande</span></th>
                                 <th><span>Utilisateur</span></th>
                                 <th>&nbsp;</th>
@@ -22,16 +22,15 @@
                             </thead>
                              <!-- Fin tête du tableau  -->
                              <!-- début corps du tableau  -->
-                            <tbody>
+                            <tbody  v-for="commande in commande" :key="commande.id" >
                                 <!--  2eme ligne du tableau -->
                                 <tr>
                                     <td>
-                                        <p href="#" class="user-link">A0000</p> 
-                                        <span class="user-subhead">vanessa</span>
+                                        <p href="#" class="user-link">{{ commande.id }}</p>
                                     </td>
-                                    <td>2013/08/12</td>
+                                    <td>{{ commande.created_at }}</td>
                                     <td>
-                                        <p href="#">User1</p></td>
+                                        <p href="#">{{ commande.clientId }}</p></td>
                                     <td style="width: 20%;">
                                        
                                         <a href="#" class="table-link text-info">
@@ -49,69 +48,7 @@
                                     </td>
                                 </tr>
                                  <!-- Fin 2eme ligne du tableau -->
-                                  <!-- 3eme ligne du tableau -->
-                              <tr>
-                                    <td>
-                                        <a href="#" class="user-link">A0000</a> <br>
-                                        <span class="user-subhead">vanessa</span>
-                                    </td>
-                                    <td>2013/08/12</td>
-                                    
-                                    <td>
-                                        <p href="#">User1</p>
-                                    </td>
-                                    
-                
-                                    <td style="width: 20%;">
-                                       
-                                        <a href="#" class="table-link text-info">
-                                            <span class="fa-stack">
-                                                <i class="fa fa-square fa-stack-2x"></i>
-                                                <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="table-link danger">
-                                            <span class="fa-stack">
-                                                <i class="fa fa-square fa-stack-2x"></i>
-                                                <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-                                            </span>
-                                        </a>
-                                    </td>
-                                </tr>
-                                 <!-- 3eme fin ligne du tableau -->
-                                  <!-- 4eme ligne du tableau -->
-                              <tr>
-                                  <!-- 1er cellule -->
-                                    <td>
-                                       
-                                        <a href="#" class="user-link">A0000</a> <br>
-                                        <span class="user-subhead">vanessa</span>
-                                    </td>
-                                    <!-- 2eme cellule -->
-                                    <td>2013/08/12</td>
-                                    <!-- 3eme cellule -->
-                                    <td>
-                                        <p href="#">User1</p>
-                                    </td>
-                                    
-                                   <!-- 4eme cellule -->
-                                    <td style="width: 20%;">
-                                       
-                                        <a href="#" class="table-link text-info">
-                                            <span class="fa-stack">
-                                                <i class="fa fa-square fa-stack-2x"></i>
-                                                <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="table-link danger">
-                                            <span class="fa-stack">
-                                                <i class="fa fa-square fa-stack-2x"></i>
-                                                <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-                                            </span>
-                                        </a>
-                                    </td>
-                                </tr>
-                                 <!--  fin 4emeligne du tableau -->
+                                
                             </tbody>
                              <!-- Fin corps du tableau  -->
                         </table>
@@ -127,13 +64,28 @@
 </template>
 
 <script>
-import dash from "@/components/dash.vue";
+import dash from "../components/admin/dash.vue";
 
 export default {
   name: "listcommande",
   components: {
     dash,
-    
+  },
+   data() {
+    return {
+      commande: {},
+    };
+  },
+  created() {
+    this.axios
+      .get("http://localhost:3000/commande/show")
+      .then((res) => {
+        console.log(res);
+        this.commande = res.data.commande;
+      })
+      .catch((err) => {
+        alert(err);
+      });
   },
 };
 </script>
@@ -155,6 +107,7 @@ table {
     height: 200px;
     border: 1px solid #bdc3c7;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
 }
 tr {
     transition: all .2s ease-in;
@@ -194,6 +147,7 @@ table {
     height: 200px;
     border: 1px solid #bdc3c7;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
 }
 tr {
     transition: all .2s ease-in;
@@ -212,6 +166,7 @@ thead {
     background-color: #FCFCFC;;
     transform: scale(1.02);
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    border: #FF6B95 6px solid;
 }
 
 }
@@ -231,6 +186,7 @@ table {
     height: 200px;
     border: 1px solid #bdc3c7;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
 }
 tr {
     transition: all .2s ease-in;
@@ -249,6 +205,7 @@ thead {
     background-color: #FCFCFC;;
     transform: scale(1.02);
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    border: #FF6B95 6px solid;
 }
 
 }
@@ -262,12 +219,12 @@ thead {
 }
 
 table {
-   
     border-collapse: collapse;
     width: 436px;
     height: 200px;
     border: 1px solid #bdc3c7;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
 }
 tr {
     transition: all .2s ease-in;
@@ -286,6 +243,7 @@ thead {
     background-color: #FCFCFC;;
     transform: scale(1.02);
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    border: #FF6B95 6px solid;
 }
 
 }
@@ -305,6 +263,7 @@ table {
     height: 200px;
     border: 1px solid #bdc3c7;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
 }
 tr {
     transition: all .2s ease-in;
@@ -323,6 +282,7 @@ thead {
     background-color: #FCFCFC;;
     transform: scale(1.02);
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    border: #FF6B95 6px solid;
 }
 
 }

@@ -12,10 +12,12 @@ import reinitialiser from "../components/reinitialiser.vue";
 import Mtp from "../components/Mtp.vue";
 import register from "../components/register.vue";
 /////////////////////////////////////////////////////////  Nashboard d'admin  /////////////////////////////////////////////////////////////////////////////////
-import dashboard from "../components/dashboard.vue";
+import dashboard from "../components/admin/dashboard.vue";
 import listuser from "../components/listuser.vue";
 import listproduit from "../components/listproduit.vue";
 import listcommande from "../components/listcommande.vue";
+import loginadmin from "../components/loginadmin.vue";
+import email from "../components/email.vue";
 
 /////////////////////////////////////////////////////////  Nashboard fin d'admin  /////////////////////////////////////////////////////////////////////////////////
 
@@ -65,7 +67,11 @@ const routes = [{
         name: "login",
         component: login,
     },
-
+    {
+        path: "/email",
+        name: "email",
+        component: email,
+    },
 
     {
         path: "/Mtp",
@@ -83,7 +89,12 @@ const routes = [{
         component: reinitialiser,
     },
     {
-        path: "/dashboard",
+        path: "/loginadmin",
+        name: "loginadmin",
+        component: loginadmin,
+    },
+    {
+        path: "/admin/dashboard",
         name: "dashboard",
         component: dashboard,
     },

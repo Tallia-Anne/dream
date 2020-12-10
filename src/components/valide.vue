@@ -2,15 +2,14 @@
   <div class="valide">
     <div class="wrap">
       <h2>Validation de l'adresse email</h2>
-
+  <!-- Début du formulaire --> 
       <form>
         <input
           type="email"
           name="email"
           placeholder="Mettre son email"
           class="form-control my-2 p-2"
-          v-model="email"
-        />
+          v-model="email"/>
 
         <div class="input-group">
           <div class="input-box">
@@ -18,6 +17,7 @@
           </div>
         </div>
       </form>
+       <!-- Fin du formulaire --> 
     </div>
   </div>
 </template>
@@ -34,7 +34,7 @@ export default {
   methods: {
     validermail: function () {
       this.axios
-        .post(this.$apiurl + "client/validemail", {
+        .post("http://localhost:3000/client/validemail", {
           email: this.email,
         })
         .then((result) => {
@@ -68,7 +68,7 @@ export default {
     height: 48%;
     padding: 25px;
     margin: 25px auto 0;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+   box-shadow: 2px 2px 5px black;
     border-radius: 9px;
   }
   /* le titre du formulaire */
@@ -120,7 +120,7 @@ export default {
     height: 48%;
     padding: 25px;
     margin: 25px auto 0;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+   box-shadow: 2px 2px 5px black;
     border-radius: 9px;
   }
   /*Le titre du formulaire */
@@ -169,10 +169,10 @@ export default {
     background-color: #ff99cc;
     opacity: 0.9;
     width: 500px;
-    height: 25%;
+    height: 2%;
     padding: 25px;
     margin: 25px auto 0;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+   box-shadow: 2px 2px 5px black;
     border-radius: 9px;
   }
   /* le titre du formulaire */
@@ -224,7 +224,7 @@ export default {
     height: 24%;
     padding: 25px;
     margin: 25px auto 0;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+   box-shadow: 2px 2px 5px black;
     border-radius: 9px;
   }
   /* le titre du formulaire */
@@ -276,7 +276,7 @@ export default {
     height: 24%;
     padding: 25px;
     margin: 25px auto 0;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+   box-shadow: 2px 2px 5px black;
     border-radius: 9px;
   }
   /* le titre du formulaire */

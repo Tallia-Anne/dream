@@ -19,7 +19,14 @@ Vue.use(IconsPlugin);
 Vue.use(Vueaxios, axios);
 Vue.config.productionTip = false
 
+/* render :  function ( createElement ) {
+  return  createElement (App);
+}La render()fonction est un élément central de Vue.
+ */
 new Vue({
     router,
+    // h un alias createElement
     render: h => h(App)
+        // “mount” signifie le moment où votre composant est inséré dans le DOM.
+        // Ce code crée une nouvelle instance de Vue et la monte sur l'élément HTML avec l'ID 
 }).$mount('#app')

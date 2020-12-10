@@ -5,9 +5,7 @@
     <div class="header">
       <img src="../assets/5f5398cd21c1a.jpg" alt="mon img" />
       <router-link to="/decouvrir">
-        <button class="bouton1">
-          <a href="#">Découvrir</a>
-        </button>
+        <button class="bouton1">découvrir</button>
       </router-link>
     </div>
     <!--  FIN DU  NAVBAR -->
@@ -194,20 +192,17 @@ export default {
   .wrap {
     width: 100%;
   }
-  /*le bouton et le positionnement du bouton*/
-  .bouton1 a {
-    text-decoration: none;
-    color: black;
-    font-family: "Playfair Display", serif;
-  }
   .bouton1 {
-    background-color: yellow;
+    background-color: #fabb1f;;
     padding: 10px 30px;
     text-decoration: none;
     position: absolute;
     left: 187px;
     bottom: 78%;
     border-radius: 20px;
+    color: white;
+    border: none;
+    font-family: "Playfair Display", serif;
   }
 
   /* =============================================================================================================== */
@@ -565,7 +560,7 @@ export default {
     display: inline-block;
     padding: 10px 30px;
     border-radius: 30px;
-    box-shadow: 0 15px 30px 1px black;
+    box-shadow: 2px 2px 5px black;
   }
   /* =============================================================================================================== */
   /* ====================================================== SECTION 3 ========================================================= */
@@ -626,19 +621,17 @@ export default {
     width: 100%;
   }
   /*le bouton et le positionnement du bouton*/
-  .bouton1 a {
-    text-decoration: none;
-    color: black;
-    font-family: "Playfair Display", serif;
-  }
   .bouton1 {
-    background-color: yellow;
+      background-image: linear-gradient(to left, yellow 0%, orange 100%);
     padding: 10px 30px;
     text-decoration: none;
     position: absolute;
     left: 187px;
     bottom: -162px;
     border-radius: 20px;
+    color: white;
+    border: none;
+    font-family: "Playfair Display", serif;
   }
 
   /* =============================================================================================================== */
@@ -715,7 +708,6 @@ export default {
   .crépus img {
     display: block;
     position: relative;
-   
     transition: all 0.35s;
   }
   .crépus:hover img {
@@ -870,7 +862,7 @@ export default {
   }
   .sectionUne a {
     text-decoration: none;
-    color: yellow;
+    color: #fabb1f;;
   }
   .pc {
     text-align: center;
@@ -960,6 +952,7 @@ export default {
   .single-publication:hover {
     border: 3px solid #612741;
     border-radius: 30px;
+	box-shadow: 2px 2px 5px black;
   }
   /* le bouton */
   .single-publication .add-to-cart {
@@ -999,7 +992,7 @@ export default {
     display: inline-block;
     padding: 10px 30px;
     border-radius: 30px;
-    box-shadow: 0 15px 30px 1px black;
+    box-shadow: 2px 2px 5px black;
   }
   /* =============================================================================================================== */
   /* ====================================================== SECTION 3 ========================================================= */
@@ -1061,19 +1054,15 @@ export default {
     width: 100%;
   }
   /*le bouton et le positionnement du bouton*/
-  .bouton1 a {
-    text-decoration: none;
-    color: black;
-    font-family: "Playfair Display", serif;
-  }
   .bouton1 {
-    background-color: yellow;
+    background-image: linear-gradient(to left, yellow 0%, orange 100%);
     padding: 10px 30px;
     text-decoration: none;
     position: absolute;
     left: 129px;
     top: 13%;
     border-radius: 20px;
+    color: white;
   }
 
   /* =============================================================================================================== */
@@ -1103,7 +1092,7 @@ export default {
   }
   .sectionUne h2 {
     text-align: center;
-    color: yellow;
+    color: #fabb1f;;
     padding: 28px;
     font-family: "Playfair Display", serif;
     font-size: 35px;
@@ -1123,7 +1112,7 @@ export default {
   }
   .sectionUne a {
     text-decoration: none;
-    color: yellow;
+    color: #fabb1f;;
   }
   /*taile de l'image */
   .crépus {
@@ -1159,26 +1148,22 @@ export default {
     border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
     transition: opacity 0.35s, transform 0.35s;
-    -ms-transform: scale(0, 1);
     transform: scale(0, 1);
   }
   .crépus:hover .overlay {
     opacity: 1;
     filter: alpha(opacity=100);
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
   }
   .crépus img {
     display: block;
     position: relative;
-   
     transition: all 0.35s;
   }
   .crépus:hover img {
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
     filter: brightness(0.6);
-    -webkit-filter: brightness(0.6);
+    
   }
   .crépus a,
   .crépus p {
@@ -1231,26 +1216,21 @@ export default {
     border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
     transition: opacity 0.35s, transform 0.35s;
-    -ms-transform: scale(0, 1);
     transform: scale(0, 1);
   }
   .frisés:hover .overlay {
     opacity: 1;
     filter: alpha(opacity=100);
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
   }
   .frisés img {
     display: block;
     position: relative;
-   
     transition: all 0.35s;
   }
   .frisés:hover img {
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
     filter: brightness(0.6);
-    -webkit-filter: brightness(0.6);
   }
   .frisés a,
   .frisés p {
@@ -1303,14 +1283,11 @@ export default {
     border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
     transition: opacity 0.35s, transform 0.35s;
-    -ms-transform: scale(0, 1);
     transform: scale(0, 1);
   }
   .boucle:hover .overlay {
     opacity: 1;
     filter: alpha(opacity=100);
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
   }
   .boucle img {
@@ -1322,7 +1299,6 @@ export default {
   .boucle:hover img {
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
     filter: brightness(0.6);
-    -webkit-filter: brightness(0.6);
   }
   .boucle a,
   .boucle p {
@@ -1374,26 +1350,21 @@ export default {
     border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
     transition: opacity 0.35s, transform 0.35s;
-    -ms-transform: scale(0, 1);
     transform: scale(0, 1);
   }
   .lisse:hover .overlay {
     opacity: 1;
     filter: alpha(opacity=100);
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
   }
   .lisse img {
     display: block;
     position: relative;
-   
     transition: all 0.35s;
   }
   .lisse:hover img {
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
     filter: brightness(0.6);
-    -webkit-filter: brightness(0.6);
   }
   .lisse a,
   .lisse p {
@@ -1494,13 +1465,13 @@ export default {
   .single-publication .publication-content .price {
     font-size: 20px;
     color: gold;
-
     padding-left: 5px;
     font-weight: 300;
   }
   .single-publication:hover {
     border: 3px solid #612741;
     border-radius: 30px;
+	box-shadow: 2px 2px 5px black;
   }
   /* le bouton */
   .single-publication .add-to-cart {
@@ -1540,7 +1511,7 @@ export default {
     display: inline-block;
     padding: 10px 30px;
     border-radius: 30px;
-    box-shadow: 0 15px 30px 1px black;
+    box-shadow: 2px 2px 5px black;
   }
   /* =============================================================================================================== */
   /* ====================================================== SECTION 3 ========================================================= */
@@ -1607,19 +1578,16 @@ export default {
     width: 100%;
   }
   /*le bouton et le positionnement du bouton*/
-  .bouton1 a {
-    text-decoration: none;
-    color: black;
-    font-family: "Playfair Display", serif;
-  }
   .bouton1 {
-    background-color: yellow;
+      background-image: linear-gradient(to left, yellow 0%, orange 100%);
     padding: 10px 30px;
     text-decoration: none;
     position: absolute;
     left: 37px;
-    top: 8%;
+    top: 21%;
     border-radius: 20px;
+    color: white;
+    font-family: "Playfair Display", serif;
   }
 
   /* =============================================================================================================== */
@@ -1663,7 +1631,6 @@ export default {
     font-family: "Playfair Display", serif;
     position: absolute;
     bottom: 135px;
-
     font-size: 48px;
     left: 13px;
   }
@@ -1701,13 +1668,11 @@ export default {
     border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
     transition: opacity 0.35s, transform 0.35s;
-    -ms-transform: scale(0, 1);
     transform: scale(0, 1);
   }
   .crépus:hover .overlay {
     opacity: 1;
     filter: alpha(opacity=100);
-    -ms-transform: scale(1);
     transform: scale(1);
   }
   .crépus img {
@@ -1770,13 +1735,11 @@ export default {
     border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
     transition: opacity 0.35s, transform 0.35s;
-    -ms-transform: scale(0, 1);
     transform: scale(0, 1);
   }
   .frisés:hover .overlay {
     opacity: 1;
     filter: alpha(opacity=100);
-    -ms-transform: scale(1);
     transform: scale(1);
   }
   .frisés img {
@@ -1839,14 +1802,11 @@ export default {
     border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
     transition: opacity 0.35s, transform 0.35s;
-    -ms-transform: scale(0, 1);
     transform: scale(0, 1);
   }
   .boucle:hover .overlay {
     opacity: 1;
     filter: alpha(opacity=100);
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
   }
   .boucle img {
@@ -1858,7 +1818,6 @@ export default {
   .boucle:hover img {
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
     filter: brightness(0.6);
-    -webkit-filter: brightness(0.6);
   }
   .boucle a,
   .boucle p {
@@ -1910,14 +1869,11 @@ export default {
     border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
     transition: opacity 0.35s, transform 0.35s;
-    -ms-transform: scale(0, 1);
     transform: scale(0, 1);
   }
   .lisse:hover .overlay {
     opacity: 1;
     filter: alpha(opacity=100);
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
   }
   .lisse img {
@@ -1929,7 +1885,6 @@ export default {
   .lisse:hover img {
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
     filter: brightness(0.6);
-    -webkit-filter: brightness(0.6);
   }
   .lisse a,
   .lisse p {
@@ -1949,7 +1904,7 @@ export default {
   }
   .sectionUne a {
     text-decoration: none;
-    color: yellow;
+    color: #fabb1f;;
   }
   .pc {
     text-align: center;
@@ -2034,13 +1989,13 @@ export default {
   .single-publication .publication-content .price {
     font-size: 20px;
     color: gold;
-
     padding-left: 5px;
     font-weight: 300;
   }
   .single-publication:hover {
     border: 3px solid #612741;
     border-radius: 30px;
+	box-shadow: 2px 2px 5px black;
   }
   /* le bouton */
   .single-publication .add-to-cart {
@@ -2049,7 +2004,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;
@@ -2081,7 +2035,7 @@ export default {
     display: inline-block;
     padding: 10px 30px;
     border-radius: 30px;
-    box-shadow: 0 15px 30px 1px black;
+    box-shadow: 2px 2px 5px black;
   }
   /* =============================================================================================================== */
   /* ====================================================== SECTION 3 ========================================================= */
@@ -2134,19 +2088,18 @@ export default {
     width: 100%;
   }
   /*le bouton et le positionnement du bouton*/
-  .bouton1 a {
-    text-decoration: none;
-    color: black;
-    font-family: "Playfair Display", serif;
-  }
   .bouton1 {
-    background-color: yellow;
+    background-image: linear-gradient(to left, yellow 0%, orange 100%);
     padding: 10px 30px;
     text-decoration: none;
     position: absolute;
-    left: -6px;
-    top: 6%;
+   left: 8px;
+    top: 15%;
     border-radius: 20px;
+    color: white;
+    font-size: 16%;
+    width: 32%;
+    font-family: "Playfair Display", serif;
   }
 
   /* =============================================================================================================== */
@@ -2226,13 +2179,11 @@ export default {
     border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
     transition: opacity 0.35s, transform 0.35s;
-    -ms-transform: scale(0, 1);
     transform: scale(0, 1);
   }
   .crépus:hover .overlay {
     opacity: 1;
     filter: alpha(opacity=100);
-    -ms-transform: scale(1);
     transform: scale(1);
   }
   .crépus img {
@@ -2295,13 +2246,11 @@ export default {
     border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
     transition: opacity 0.35s, transform 0.35s;
-    -ms-transform: scale(0, 1);
     transform: scale(0, 1);
   }
   .frisés:hover .overlay {
     opacity: 1;
     filter: alpha(opacity=100);
-    -ms-transform: scale(1);
     transform: scale(1);
   }
   .frisés img {
@@ -2364,14 +2313,11 @@ export default {
     border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
     transition: opacity 0.35s, transform 0.35s;
-    -ms-transform: scale(0, 1);
     transform: scale(0, 1);
   }
   .boucle:hover .overlay {
     opacity: 1;
     filter: alpha(opacity=100);
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
   }
   .boucle img {
@@ -2383,7 +2329,6 @@ export default {
   .boucle:hover img {
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
     filter: brightness(0.6);
-    -webkit-filter: brightness(0.6);
   }
   .boucle a,
   .boucle p {
@@ -2435,14 +2380,11 @@ export default {
     border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
     transition: opacity 0.35s, transform 0.35s;
-    -ms-transform: scale(0, 1);
     transform: scale(0, 1);
   }
   .lisse:hover .overlay {
     opacity: 1;
     filter: alpha(opacity=100);
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
   }
   .lisse img {
@@ -2454,7 +2396,6 @@ export default {
   .lisse:hover img {
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
     filter: brightness(0.6);
-    -webkit-filter: brightness(0.6);
   }
   .lisse a,
   .lisse p {
@@ -2474,7 +2415,7 @@ export default {
   }
   .sectionUne a {
     text-decoration: none;
-    color: yellow;
+    color: #fabb1f;;
   }
   .pc {
     text-align: center;
@@ -2566,6 +2507,7 @@ export default {
   .single-publication:hover {
     border: 3px solid #612741;
     border-radius: 30px;
+	box-shadow: 2px 2px 5px black;
   }
   /* le bouton */
   .single-publication .add-to-cart {
@@ -2574,7 +2516,6 @@ export default {
     bottom: 0;
     left: 0;
     background: #fff;
-
     opacity: 0.88 !important;
     visibility: hidden;
     text-align: center;

@@ -1,7 +1,14 @@
 <template>
   <div class="container">
     <mynavbar />
-    <div class="contact-box">
+    
+    <div class="contact-box"  >
+      <div v-if="message !== null">
+      <div>
+        {{ message }}
+      </div>
+    </div>
+      
       <div class="left"></div>
       <div class="right">
         <h2>Mettre à jour</h2>
@@ -17,6 +24,12 @@
             placeholder="Mettre son nom"
             class="field"
             v-model="client.nom"
+          />
+           <input
+            type="ville"
+            placeholder="Insérer son ville"
+            class="field"
+            v-model="client.ville"
           />
           <input
             type="adresse"
@@ -67,7 +80,6 @@ export default {
     return {
       client: {},
       message: null,
-      pic: null,
     };
   },
   components: {
@@ -75,18 +87,20 @@ export default {
   },
   created: function () {
     if (localStorage.getItem("token") === null) {
-      this.$router.push({ name: "compte" });
+      this.$router.push({ name: "compte/:id" });
     } else {
       this.client = VueJwtDecode.decode(localStorage.getItem("token"));
       console.log(this.client);
     }
   },
   methods: {
-    update: function () {
+     update: function() {
       this.axios
-        .put(this.$apiurl + "client/update/" + this.client.id)
+        .put(
+          "http://localhost:3000/client/update/" + this.client.id,
+          this.client
+        )
         .then((res) => {
-          console.log(res);
           if (res.status === 200) {
             localStorage.setItem("token", JSON.stringify(res.data.token));
             this.message = "votre profil est a jour";
@@ -98,6 +112,7 @@ export default {
           console.log(err);
         });
     },
+  
   },
 };
 </script>

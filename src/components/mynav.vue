@@ -9,7 +9,7 @@
 
       <b-collapse id="nav-collapse" is-nav right>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item-dropdown text="Gamme" right>
+          <b-nav-item-dropdown  text="Gamme" right>
             <b-dropdown-item href="/marquenatural">
               naturalong
             </b-dropdown-item>
@@ -108,5 +108,8 @@ em {
 /* taille de panier */
 .fa-shopping-search:before {
   font-size: 21px;
+}
+navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: white;
 }
 </style>

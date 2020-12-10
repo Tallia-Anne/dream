@@ -1,10 +1,10 @@
 <template>
   <div class="contact">
-    <mynavbar />
+    
     <div class="wrap">
       <h2>Contact</h2>
       <!--Formulaire de paiement -->
-      <form @submit="prevent = docontact">
+      <form @submit.prevent ="docontact">
         <!-- Email -->
         <div class="input-group">
           <div class="input-box">
@@ -54,12 +54,13 @@
               class="name-mgs"
               placeholder="votre message"
               required="true"
+              v-model="message"
             ></textarea>
           </div>
         </div>
         <!-- Message -->
-        <div class="input-group">
-          <div class="input-box">
+        <div class="btn-submit">
+          <div >
             <button type="submit">Envoyer</button>
           </div>
         </div>
@@ -70,11 +71,33 @@
 </template>
 
 <script>
-import mynavbar from "@/components/mynavbar.vue";
+
 export default {
   name: "contact",
-  components: {
-    mynavbar,
+  components: {},
+  data() {
+    return {
+      email: "",
+      nom: "",
+      sujet: "",
+      message: "",
+    }
+  },
+  methods: {
+    docontact: function() {
+      this.axios.post("http://localhost:3000/contact/sendcontact", {
+        email: this.email,
+        nom: this.nom,
+        sujet: this.sujet,
+        message: this.message,
+      })
+      .then((result) => {
+          alert(result);
+        })
+        .catch((err) => {
+          alert(err);
+        });
+    },
   },
 };
 </script>
@@ -96,7 +119,7 @@ export default {
     background-color: #ff99cc;
     opacity: 0.9;
     width: 500px;
-    height: 82%;
+   height: 78%;
     padding: 25px;
     margin: 25px auto 0;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
@@ -177,6 +200,9 @@ export default {
     border: 1px solid #00000033;
     border-right: none;
   }
+  textarea {
+  resize: none;
+}
   /*les animations */
   .name:focus + .icon {
     background-color: pink;
@@ -184,6 +210,9 @@ export default {
     border-right: 1px solid pink;
     border: none;
     transition: 1s;
+  }
+  .btn-submit {
+    text-align: center;
   }
   /* le bouton: la couleur et la police */
   button {
@@ -197,6 +226,7 @@ export default {
     border-radius: 7px;
     font-family: "Playfair Display", serif;
     font-size: 29px;
+    text-align: center;
   }
   /*Les animations du bouton*/
   button:hover {
@@ -212,9 +242,7 @@ export default {
     background-position: center;
     background-size: cover;
     width: 100%;
-
     height: 821px;
-
     position: absolute;
   }
   /* bloc du formulaire */
@@ -254,6 +282,9 @@ export default {
   .input-box:last-child {
     margin-right: 0;
   }
+  textarea {
+  resize: none;
+}
   /* intérieur d'input */
   .name {
     padding: 14px 10px 14px 50px;
@@ -310,6 +341,9 @@ export default {
     border-right: 1px solid pink;
     border: none;
     transition: 1s;
+  }
+  .btn-submit {
+    text-align: center;
   }
   /* le bouton */
   button {
@@ -435,6 +469,12 @@ export default {
     border: none;
     transition: 1s;
   }
+  textarea {
+  resize: none;
+}
+  .btn-submit {
+    text-align: center;
+  }
   /* le bouton */
   button {
     border: none;
@@ -551,6 +591,9 @@ export default {
     border: 1px solid #00000033;
     border-right: none;
   }
+  textarea {
+  resize: none;
+}
   /* animation des icones */
   .name:focus + .icon {
     background-color: pink;
@@ -558,6 +601,9 @@ export default {
     border-right: 1px solid pink;
     border: none;
     transition: 1s;
+  }
+  .btn-submit {
+    text-align: center;
   }
   /*le bouton */
   button {
@@ -675,6 +721,9 @@ export default {
     border: 1px solid #00000033;
     border-right: none;
   }
+  textarea {
+  resize: none;
+}
   /*les icones: animations */
   .name:focus + .icon {
     background-color: pink;
@@ -682,6 +731,9 @@ export default {
     border-right: 1px solid pink;
     border: none;
     transition: 1s;
+  }
+  .btn-submit {
+    text-align: center;
   }
   /*le bouton */
   button {

@@ -2,32 +2,11 @@
   <div class="wrapper">
     <div class="regform">
       <div class="form-left">
-        <img src="../assets/5f493e28e31c4.jpg" alt="mon login" />
+        <img src="../assets/5f9fe578591d0.jpg" alt="mon login" />
       </div>
-      <form @submit.prevent="doregister" class="form-detail">
-        <h2>S'inscrit</h2>
-        <div class="form-row">
-          <input
-            type="nom"
-            name="nom"
-            class="input-text"
-            id="nom"
-            placeholder="Mettre son nom de famille"
-            v-model="nom"
-            required
-          />
-        </div>
-        <div class="form-row">
-          <input
-            type="text"
-            name="prenom"
-            class="input-text"
-            id="fullname"
-            placeholder="Mettre son prénom"
-            v-model="prenom"
-            required
-          />
-        </div>
+      <form @submit.prevent="dologin" class="form-detail">
+        <h2>Connexion de l'espace admin</h2>
+
         <div class="form-row">
           <input
             type="email"
@@ -36,7 +15,6 @@
             id="email"
             placeholder="Mettre son adresse email"
             v-model="email"
-            required
           />
         </div>
         <div class="form-row">
@@ -46,7 +24,6 @@
             class="input-text"
             placeholder="Mettre son mot de passe"
             v-model="password"
-            required
           />
         </div>
         <div class="form-row-last">
@@ -58,53 +35,61 @@
             value="Confirmer"
           />
         </div>
+        <router-link to="/reinitialiser">
+          <a  href="#">Mot de passe oublié</a>
+        </router-link>
       </form>
     </div>
   </div>
 </template>
 
 <script>
+import jwt from "vue-jwt-decode";
 export default {
-  name: "register",
+  name: "loginadmin",
   components: {},
   data() {
     return {
-      prenom: "",
-      nom: "",
       email: "",
       password: "",
     };
   },
   methods: {
-    doregister: function () {
-      this.axios
-        .post("http://localhost:3000/client/register", {
-          prenom: this.prenom,
-          nom: this.nom,
-          email: this.email,
-          password: this.password,
-        })
-        .then((res) => {
-          console.log(res);
-          if (res.data.token) {
-            localStorage.setItem("token", res.data.token);
-            /* une fois les donnes recuperer et stockés il va nous renvoyer sur login */
-            this.$router.push({ name: "login" });
-            window.location.reload();
-          } else {
-            this.$router.push({
-              name: "login",
-              params: { msg: "non inscrit" },
-            });
-          }
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    },
-  },
-};
+    dologin: function (){
+            this.axios.post("http://localhost:3000/user/login", {
+                email:this.email,
+                password:this.password,
+            })
+            .then((res) =>{
+                if(res.data.auth){
+                    alert(res.data.auth);
+                    localStorage.setItem("auth",res.data.auth);
+                    localStorage.setItem("token",res.data.token);
+                    var user = jwt.decode(res.data.token);
+                    //decter le role 
+                    console.log(user);
+                    if(user.role == "admin") {
+                        this.$router.push({path: "/admin/dashboard"}); 
+                    }else {
+                        this.$router.push({name: 'login'})
+                    window.location.reload(); 
+                    }
+                    /*this.$router.push({name: '/admin/homeuser'})
+                    window.location.reload();*/
+                }else{
+                    alert(res.data.auth);
+                    /*this.$router.push({name: "register", params: {msg: "non connecté"} })*/
+                }
+            })
+            .catch(err => {
+                console.log(err);
+            })
+
+        },
+  }
+}
 </script>
+
 <style scoped>
 @media screen and (min-width: 1280px) {
   /* arrière plan */
@@ -198,8 +183,8 @@ de l'image vers le bas */
   }
   /* le bouton du formulaire */
   .regform .form-detail .register {
-    background-image: linear-gradient(to left, yellow 0%, orange 100%);
-    box-shadow: 0 9px 25px -5px orange;
+    background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    box-shadow: 0 9px 25px -5px #A445B2;
     border-radius: 6px;
     width: 160px;
     padding: 10px;
@@ -209,6 +194,14 @@ de l'image vers le bas */
     font-family: "Courier New", Courier, monospace;
     font-weight: 700;
     font-size: 18px;
+    color: white;
+  }
+  a {
+    color: black;
+  }
+  a:hover {
+    color: black;
+    text-decoration: none;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -228,7 +221,7 @@ de l'image vers le bas */
   /* le bloc du formulaire */
   .regform {
     background: #fff;
-    width: 845px;
+    width: 968px;
     border-radius: 7px;
     font-family: "Courier New", Courier, monospace;
     position: relative;
@@ -236,7 +229,7 @@ de l'image vers le bas */
     box-shadow: 10px 3px 10px 11px rgba(0, 0, 0, 0.75);
     margin-left: 13%;
     margin-top: 3%;
-    height: 82%;
+    height: 81%;
   }
   /* le positionnement 
 de l'image vers le bas */
@@ -303,8 +296,8 @@ de l'image vers le bas */
   }
   /* le bouton du formulaire */
   .regform .form-detail .register {
-    background-image: linear-gradient(to left, yellow 0%, orange 100%);
-    box-shadow: 0 9px 25px -5px orange;
+    background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    box-shadow: 0 9px 25px -5px #A445B2;
     border-radius: 6px;
     width: 160px;
     padding: 10px;
@@ -314,6 +307,14 @@ de l'image vers le bas */
     font-family: "Courier New", Courier, monospace;
     font-weight: 700;
     font-size: 18px;
+    color: white;
+  }
+  a {
+    color: black;
+  }
+  a:hover {
+    color: black;
+    text-decoration: none;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -369,7 +370,7 @@ de l'image vers le bas */
     box-shadow: 10px 3px 10px 11px rgba(0, 0, 0, 0.75);
     margin-left: 13%;
     margin-top: 3%;
-    height: 66%;
+    height: 75%;
   }
   .regform .form-detail input {
     width: 92%;
@@ -388,17 +389,31 @@ de l'image vers le bas */
   }
   /* le bouton du formulaire */
   .regform .form-detail .register {
-    background-image: linear-gradient(to left, yellow 0%, orange 100%);
-    box-shadow: 0 9px 25px -5px orange;
+    background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    box-shadow: 0 9px 25px -5px #A445B2;
     border-radius: 6px;
     width: 160px;
     padding: 10px;
     border: none;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0, 15) !important;
-    margin: 37px 0 50px 156px;
+    margin: 26px 0px 26px 151px;
     font-family: "Courier New", Courier, monospace;
     font-weight: 700;
     font-size: 18px;
+    color: white;
+  }
+  regform .form-detail .register:hover {
+    transform: translatey(2px);
+  }
+  regform .form-detail .register:active {
+    transform: translatey(5px);
+  }
+  a {
+    color: black;
+  }
+  a:hover {
+    color: black;
+    text-decoration: none;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767.9px) {
@@ -414,15 +429,15 @@ de l'image vers le bas */
     align-items: center;
     background-image: url("../assets/fond.jpg");
   }
-  /* le titre du login */
-  h2 {
-    text-align: center;
-  }
   /* le format du formulaire */
   .regform {
     margin: 120px 20px;
     flex-direction: column;
     width: 73%;
+  }
+  /* le titre du login */
+  h2 {
+    text-align: center;
   }
   /* la taille de l'image */
   .regform .form-left {
@@ -454,7 +469,7 @@ de l'image vers le bas */
     box-shadow: 10px 3px 10px 11px rgba(0, 0, 0, 0.75);
     margin-left: 13%;
     margin-top: 3%;
-    height: 56%;
+    height: 61%;
   }
   .regform .form-detail input {
     width: 92%;
@@ -473,17 +488,32 @@ de l'image vers le bas */
   }
   /* le bouton du formulaire */
   .regform .form-detail .register {
-    background-image: linear-gradient(to left, yellow 0%, orange 100%);
-    box-shadow: 0 9px 25px -5px orange;
+    background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    box-shadow: 0 9px 25px -5px #A445B2;
     border-radius: 6px;
     width: 160px;
     padding: 10px;
     border: none;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0, 15) !important;
-    margin: 37px 0 50px 50px;
+    margin: 36px 0 50px 50px;
     font-family: "Courier New", Courier, monospace;
     font-weight: 700;
     font-size: 18px;
+    color: white;
+  }
+  regform .form-detail .register:hover {
+    transform: translatey(2px);
+  }
+  regform .form-detail .register:active {
+    transform: translatey(5px);
+  }
+   a {
+    color: black;
+    font-size: 13px;
+  }
+  a:hover {
+    color: black;
+    text-decoration: none;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
@@ -508,6 +538,7 @@ de l'image vers le bas */
   /* le titre du login */
   h2 {
     text-align: center;
+    font-size: 20px;
   }
   /* la taille de l'image */
   .regform .form-left {
@@ -539,7 +570,7 @@ de l'image vers le bas */
     box-shadow: 10px 3px 10px 11px rgba(0, 0, 0, 0.75);
     margin-left: 13%;
     margin-top: 3%;
-    height: 49%;
+    height: 53%;
   }
   .regform .form-detail input {
     width: 92%;
@@ -558,8 +589,8 @@ de l'image vers le bas */
   }
   /* le bouton du formulaire */
   .regform .form-detail .register {
-    background-image: linear-gradient(to left, yellow 0%, orange 100%);
-    box-shadow: 0 9px 25px -5px orange;
+    background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    box-shadow: 0 9px 25px -5px #A445B2;
     border-radius: 6px;
     width: 160px;
     padding: 10px;
@@ -570,6 +601,20 @@ de l'image vers le bas */
     font-weight: 700;
     font-size: 18px;
     color: white;
+  }
+  regform .form-detail .register:hover {
+    transform: translatey(2px);
+  }
+  regform .form-detail .register:active {
+    transform: translatey(5px);
+  }
+  p,a {
+    color: black;
+    font-size: 11px;
+  }
+  a:hover {
+    color: black;
+    text-decoration: none;
   }
 }
 </style>

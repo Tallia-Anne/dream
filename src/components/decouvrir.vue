@@ -131,7 +131,7 @@ export default {
    max-width: 70rem;
    padding: 4rem;
    background-color:#FCFCFC;
-   box-shadow: 1px 1px 12px #555;
+   box-shadow: 2px 2px 5px black;
    border-radius: 15px;
    margin-left: 8%;
    
@@ -159,7 +159,7 @@ export default {
   position:absolute;
   top:0;
   left:0;
-  box-shadow: 1px 1px 12px #555;
+  box-shadow: 2px 2px 5px black;
   border-radius: 10px;
 }
 
@@ -171,7 +171,7 @@ export default {
 }
 .text{
   margin-bottom: 3rem;
-  font-size: 17px;
+  font-size: 22px;
   color: black;
    font-family: "Galada", cursive;
    
@@ -263,7 +263,7 @@ export default {
    max-width: 70rem;
    padding: 4rem;
    background-color:#FCFCFC;
-   box-shadow: 1px 1px 12px #555;
+   box-shadow: 2px 2px 5px black;
    border-radius: 15px;
    margin-left: 8%;
    
@@ -291,7 +291,7 @@ export default {
   position:absolute;
   top:0;
   left:0;
-  box-shadow: 1px 1px 12px #555;
+  box-shadow: 2px 2px 5px black;
   border-radius: 10px;
 }
 
@@ -316,15 +316,15 @@ export default {
    font-size: 20px;
    color: #fff;
   background-image: linear-gradient(to left, yellow 0%, orange 100%);
-  box-shadow: 1px 1px 12px #555;
+  box-shadow: 2px 2px 5px black;
    border-radius: 10px;
    border: 1px solid yellow;
    text-decoration: none;
 }
 .button:hover{
-  background-color: transparent;
+  background-color: #FCFCFC;
   color: yellow;
-  transition-delay: 100ms;
+  border: 1 px solid yellow;
 }
 }
  @media screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -336,7 +336,7 @@ export default {
    max-width: 70rem;
    padding: 4rem;
    background-color:#FCFCFC;
-   box-shadow: 1px 1px 12px #555;
+   box-shadow: 2px 2px 5px black;
    border-radius: 15px;
    margin-left: 8%;
 }
@@ -363,7 +363,7 @@ export default {
   position:absolute;
   top:0;
   left:0;
-  box-shadow: 1px 1px 12px #555;
+  box-shadow: 2px 2px 5px black;
   border-radius: 10px;
 }
 
@@ -375,7 +375,7 @@ export default {
 }
 .text{
   margin-bottom: 3rem;
-  font-size: 17px;
+  font-size: 22px;
   color: black;
   font-family: "Galada", cursive;
    
@@ -426,37 +426,37 @@ export default {
     background-color: yellow;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c2 {
     background-color: #ffff99;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c3 {
     background-color: #ffcc99;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c4 {
     background-color: #cc9999;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c5 {
     background-color: #cc3333;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c6 {
     background-color: #ff99cc;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   /* =============================================================================================================== */
   /* ==================================================== Fin de SectionDEUX ===================================================== */
@@ -473,7 +473,7 @@ export default {
    max-width: 70rem;
    padding: 4rem;
    background-color:#FCFCFC;
-   box-shadow: 1px 1px 12px #555;
+   box-shadow: 2px 2px 5px black;
    border-radius: 15px;
    margin-left: 8%;
    
@@ -501,7 +501,7 @@ export default {
   position:absolute;
   top:0;
   left:0;
-  box-shadow: 1px 1px 12px #555;
+  box-shadow: 2px 2px 5px black;
   border-radius: 10px;
 }
 
@@ -525,18 +525,16 @@ export default {
    font-size: 20px;
    color: #fff;
   background-image: linear-gradient(to left, yellow 0%, orange 100%);
-  box-shadow: 1px 1px 12px #555;
+  box-shadow: 2px 2px 5px black;
    border-radius: 10px;
    border: 1px solid yellow;
    text-decoration: none;
 }
 .button:hover{
-  background-color: transparent;
+  background-color: #FCFCFC;
   color: yellow;
-  transition-delay: 100ms;
+  border: 1 px solid yellow;
 }
-
-
  }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -548,7 +546,7 @@ export default {
     padding: 71px;
     flex-direction: column;
     background-color: #FCFCFC;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
     border-radius: 15px;
     width: 88%;
    }
@@ -607,37 +605,37 @@ export default {
     background-color: yellow;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c2 {
     background-color: #ffff99;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c3 {
     background-color: #ffcc99;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c4 {
     background-color: #cc9999;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c5 {
     background-color: #cc3333;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c6 {
     background-color: #ff99cc;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   /* =============================================================================================================== */
   /* ==================================================== Fin de SectionDEUX ===================================================== */
@@ -649,7 +647,7 @@ export default {
     padding: 71px;
     flex-direction: column;
     background-color: #FCFCFC;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
     border-radius: 15px;
     width: 88%;
     margin-left: 6%;
@@ -676,15 +674,15 @@ export default {
    font-size: 20px;
    color: #fff;
   background-image: linear-gradient(to left, yellow 0%, orange 100%);
-  box-shadow: 1px 1px 12px #555;
+  box-shadow: 2px 2px 5px black;
    border-radius: 10px;
    border: 1px solid yellow;
    text-decoration: none;
 }
 .button:hover{
-  background-color: transparent;
+  background-color: #FCFCFC;
   color: yellow;
-  transition-delay: 100ms;
+  border: 1 px solid yellow;
 }
  }
  @media screen and (min-width: 480px) and (max-width: 767.9px) {
@@ -696,7 +694,7 @@ export default {
     padding: 71px;
     flex-direction: column;
     background-color: #FCFCFC;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
     border-radius: 15px;
     width: 88%;
    }
@@ -755,37 +753,37 @@ export default {
     background-color: yellow;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c2 {
     background-color: #ffff99;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c3 {
     background-color: #ffcc99;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c4 {
     background-color: #cc9999;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c5 {
     background-color: #cc3333;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c6 {
     background-color: #ff99cc;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   /* =============================================================================================================== */
   /* ==================================================== Fin de SectionDEUX ===================================================== */
@@ -797,7 +795,7 @@ export default {
     padding: 71px;
     flex-direction: column;
     background-color: #FCFCFC;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
     border-radius: 15px;
     width: 88%;
     margin-left: 6%;
@@ -824,7 +822,7 @@ export default {
    font-size: 20px;
    color: #fff;
   background-image: linear-gradient(to left, yellow 0%, orange 100%);
-  box-shadow: 1px 1px 12px #555;
+  box-shadow: 2px 2px 5px black;
    border-radius: 10px;
    border: 1px solid yellow;
    text-decoration: none;
@@ -844,7 +842,7 @@ export default {
     padding: 71px;
     flex-direction: column;
     background-color: #FCFCFC;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
     border-radius: 15px;
     width: 88%;
    }
@@ -902,37 +900,37 @@ export default {
     background-color: yellow;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c2 {
     background-color: #ffff99;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c3 {
     background-color: #ffcc99;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c4 {
     background-color: #cc9999;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c5 {
     background-color: #cc3333;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   .c6 {
     background-color: #ff99cc;
     border-radius: 11px;
     font-family: "Galada", cursive;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
   }
   /* =============================================================================================================== */
   /* ==================================================== Fin de SectionDEUX ===================================================== */
@@ -944,7 +942,7 @@ export default {
     padding: 71px;
     flex-direction: column;
     background-color: #FCFCFC;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 2px 2px 5px black;
     border-radius: 15px;
     width: 88%;
     margin-left: 6%;
@@ -970,7 +968,7 @@ export default {
    font-size: 20px;
    color: #fff;
   background-image: linear-gradient(to left, yellow 0%, orange 100%);
-  box-shadow: 1px 1px 12px #555;
+  box-shadow: 2px 2px 5px black;
    border-radius: 10px;
    border: 1px solid yellow;
    text-decoration: none;

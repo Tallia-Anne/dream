@@ -25,10 +25,6 @@
         <i class="fas fa-home"></i>
         <span>Adresses</span>
       </a>
-      <a href="/contact">
-        <i class="far fa-envelope"></i>
-        <span>Contact</span>
-      </a>
        <a>
         <i class="fas fa-sign-out-alt"></i>
         <span class="dec">Déconnexion</span>

@@ -35,7 +35,7 @@ export default {
   methods: {
     checkForm: function () {
       this.axios
-        .post(this.$apiurl + "client/forgetpassword", {
+        .post("http://localhost:3000/client/forgetpassword", {
           email: this.email,
         })
         .then((res) => {

@@ -92,7 +92,7 @@
 </template>
 
 <script>
-import dash from "@/components/dash.vue";
+import dash from "../components/admin/dash.vue";
 
 export default {
   name: "listproduit",

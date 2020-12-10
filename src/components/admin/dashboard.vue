@@ -1,8 +1,10 @@
 <template>
 <div>
-     <dash />
+     <dash /> 
     <section id="main-dashboard-content">
-      <h1 class="welcome-title">Bienvenue dans l'espace adminstration</h1>
+      <h1 class="welcome-title">Bonjour {{user.nom}} {{user.prenom}} ,</h1>
+      <p>Bienvenue dans l'espace adminstration. Dans l'espace d'administration qui est la partie du site Internet uniquement visible par l'administrateur. 
+          Il permet de gérer le contenu et les fonctionnalités du site pour  gerer les produits, les utilisateurs et les commandes.</p>
       <div class="row mb-2 ">
           <!-- sectionUne -->
       <div class="col-md-4 mb-5 card-produit">
@@ -44,13 +46,34 @@
 </template>
 
 <script>
-/* inportation de dash */
-import dash from "../components/dash";
+import jwt from "vue-jwt-decode"
+/* importation de dash */
+import dash from "./dash.vue";
 export default {
     /* le nom du component */
  name: "dashboard",
  /* le component qu'on veut importer */
- components: {dash}
+ components: {dash},
+ data() {
+     return {
+         user: {},
+     }
+ },
+ created() {
+     if( localStorage.getItem("auth")) {
+         console.log(localStorage.getItem("auth"));
+         this.user = jwt.decode(localStorage.getItem("token"));
+         if(this.user.role != "admin") {
+             localStorage.removeItem("token");
+             localStorage.removeItem("auth");
+             this.$router.push({path: "loginadmin" });
+         }
+     } else {
+          localStorage.removeItem("token");
+             localStorage.removeItem("auth");
+             this.$router.push({path: "login" });
+     }
+ }
 }
 </script>
 
