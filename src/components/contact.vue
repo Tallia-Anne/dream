@@ -85,7 +85,7 @@ export default {
   },
   methods: {
     docontact: function() {
-      this.axios.post("http://localhost:3000/contact/sendcontact", {
+      this.axios.post(this.$apiurl +"contact/sendcontact", {
         email: this.email,
         nom: this.nom,
         sujet: this.sujet,

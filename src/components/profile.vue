@@ -61,9 +61,7 @@
             name="password"
             placeholder="Mettre son mot de passe"
             class="field"
-            v-model="client.password"
-          />
-
+            v-model="client.password"/>
           <button type="submit" class="btn">Modifier</button>
         </form>
       </div>
@@ -169,7 +167,6 @@ export default {
     padding: 0 0 10px;
     margin-bottom: 10px;
   }
-
   /* les inputs: interieur */
   .field {
     width: 100%;
@@ -246,17 +243,14 @@ export default {
     background-size: cover;
     height: 100%;
   }
-
   .right {
     padding: 25px 40px;
   }
-
   h2 {
     position: relative;
     padding: 0 0 10px;
     margin-bottom: 10px;
   }
-
   .field {
     width: 100%;
     border: 2px solid rgba(0, 0, 0, 0);
@@ -280,7 +274,6 @@ export default {
     cursor: pointer;
     transition: 0.3s;
   }
-
   .field:focus {
     border: 2px solid #ffcc99;
     box-shadow: 0 0 2px 1px #ffcc99;

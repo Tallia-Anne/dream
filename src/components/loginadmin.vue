@@ -56,7 +56,7 @@ export default {
   },
   methods: {
     dologin: function (){
-            this.axios.post("http://localhost:3000/user/login", {
+            this.axios.post(this.$apiurl +"user/login", {
                 email:this.email,
                 password:this.password,
             })

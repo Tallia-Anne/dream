@@ -163,4 +163,16 @@ a {
   color: white;
   font-family: "Playfair Display", serif;
 }
+p:hover {
+  color: white;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+
+}
+/* la police des liens: couleur et police personnaliser */
+a:hover {
+  color: white;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+}
 </style>

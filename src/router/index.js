@@ -17,7 +17,7 @@ import listuser from "../components/listuser.vue";
 import listproduit from "../components/listproduit.vue";
 import listcommande from "../components/listcommande.vue";
 import loginadmin from "../components/loginadmin.vue";
-import email from "../components/email.vue";
+
 
 /////////////////////////////////////////////////////////  Nashboard fin d'admin  /////////////////////////////////////////////////////////////////////////////////
 
@@ -27,7 +27,6 @@ import email from "../components/email.vue";
 import mynavbar from "../components/mynavbar.vue";
 import contact from "../components/contact.vue";
 import commande from "../components/commande.vue";
-import ajadresse from "../components/ajadresse.vue";
 import profile from "../components/profile.vue";
 
 /////////////////////////////////////////////////////////   Fin de Nashboard  /////////////////////////////////////////////////////////////////////////////////
@@ -67,11 +66,7 @@ const routes = [{
         name: "login",
         component: login,
     },
-    {
-        path: "/email",
-        name: "email",
-        component: email,
-    },
+
 
     {
         path: "/Mtp",
@@ -152,12 +147,7 @@ const routes = [{
         component: () =>
             import ("../components/dtproduit.vue"),
     },
-    {
-        path: "/dthuilet/:id",
-        name: "dthuile",
-        component: () =>
-            import ("../components/dthuile.vue"),
-    },
+
 
 
     {
@@ -267,11 +257,7 @@ const routes = [{
         name: "contact",
         component: contact,
     },
-    {
-        path: "/ajadresse",
-        name: "ajadresse",
-        component: ajadresse,
-    },
+
 ];
 
 const router = new VueRouter({

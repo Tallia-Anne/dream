@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     donewsletter: function() {
-      this.axios.post("http://localhost:3000/newsletter/sendnewsletter", {
+      this.axios.post(this.$apiurl +"newsletter/sendnewsletter", {
         email: this.email,
       })
       .then((result) => {

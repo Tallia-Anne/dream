@@ -1,23 +1,25 @@
 <template>
-  <div class="arrière" >
+  <div class="arriere" >
       <mynavbar />
 <div class="card">
    <div class="banner">
      
    </div>
    <div class="info">
-      <h1 class="name" style="display: inline">NomPrénom</h1>
+      <h1 class="name" style="display: inline">Bonjour {{client.nom}}  {{client.prenom}}</h1>
+       <h2 class="name" >Les informations personnelles:</h2>
       <div class="details">
-          <h4> Ville</h4>
-          <h4> Nomuser</h4>
-          <h4> Adresse</h4>
-         <h4> Adresse </h4>
-         <h4> cp</h4>
-         <h4> 12</h4>
-          <h4> Numéro de téléphone</h4>
-         <h4> +966537118696</h4>
-         <h4> Adresse mail</h4>
-         <h4>cascocode@gmail.com</h4>
+        
+          <h4> Ville: {{client.ville}} </h4>
+         
+          <h4> Adresse: {{client.adresse}}</h4>
+         <h4>  </h4>
+         <h4> cp: {{client.cp}} </h4>
+         
+          <h4> Numéro de téléphone: {{client.tel}} </h4>
+         
+         <h4> Adresse mail: {{client.email}} </h4>
+         
       </div>
       <div>
           <a href="/profile"><button> Modifier</button></a>
@@ -29,6 +31,7 @@
 </template>
 
 <script>
+import jwt from "vue-jwt-decode"
 import mynavbar from "@/components/mynavbar.vue";
 export default {
   name: "compte",
@@ -46,7 +49,7 @@ export default {
       .get(this.$apiurl +"client/profile/" + this.client.id)
       .then((res) => {
         console.log(res);
-        this.client = res.data.client;
+        this.client = jwt.decode(localStorage.getItem("token"));
       })
       .catch((err) => {
         alert(err);
@@ -57,22 +60,22 @@ export default {
 
 <style scoped>
 @media screen and (min-width: 1280px) {
- .arrière {
-    background-image: url("https://img.freepik.com/photos-gratuite/vue-dessus-bouteille-noix-coco-tranches-orance_23-2148305477.jpg?size=626&ext=jpg&ga=GA1.2.1033970166.1585772392");
+ .arriere {
+   background-image: url("../assets/fond.jpg");
      background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 133vh;
     position: absolute;
-    margin-top: 2%;
+    
 }
 .card {
 	margin: 50px auto;
 	background: #ffffff;
 	border: #c2c2c2;
 	border-radius: 9px;
-	padding: 9px;
+	padding: 2px;
 	text-align: center;
 	width: 500px;
 	box-shadow: 3px 2px 9px 0px rgba(80, 63, 63, 0.62);
@@ -86,13 +89,19 @@ export default {
 
 .card .info {
 	padding-top: 48px;
-	background: #FCD6EA;
+  background: #FCD6EA;
+  
 }
-
+.name {
+  color: white;
+  padding: 6%;
+  font-size: 28px;
+}
 .card .info .details {
 	text-align: left;
 	color: #ff8838;
-	padding: 1px 29px;
+  padding: 1px 29px;
+  font-size: 20px;
 }
 
   /* l'apparence du bouton */

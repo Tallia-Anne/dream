@@ -21,10 +21,6 @@
         <i class="fas fa-link"></i>
         <span>Commandes</span>
       </a>
-      <a href="/ajadresse">
-        <i class="fas fa-home"></i>
-        <span>Adresses</span>
-      </a>
        <a>
         <i class="fas fa-sign-out-alt"></i>
         <span class="dec">Déconnexion</span>

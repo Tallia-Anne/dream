@@ -121,9 +121,6 @@ export default {
 }
 
 .content-box:hover .box-icon-effect-1a .box-icon i:after {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
     opacity: 1
 }
@@ -219,7 +216,7 @@ a:hover {
 @media screen and (min-width: 768px) and (max-width: 1024px)   {
  /* le positionnement l'ensemble */   
 #main-dashboard-content {
-    margin-left: 87px;
+margin-left: 87px;
   box-sizing: border-box;
   height: 100%;
   padding: 20px 25px;

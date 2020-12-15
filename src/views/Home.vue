@@ -203,6 +203,7 @@ export default {
     color: white;
     border: none;
     font-family: "Playfair Display", serif;
+     box-shadow: 2px 2px 5px black;
   }
 
   /* =============================================================================================================== */
@@ -632,6 +633,7 @@ export default {
     color: white;
     border: none;
     font-family: "Playfair Display", serif;
+     box-shadow: 2px 2px 5px black;
   }
 
   /* =============================================================================================================== */
@@ -1063,6 +1065,7 @@ export default {
     top: 13%;
     border-radius: 20px;
     color: white;
+     box-shadow: 2px 2px 5px black;
   }
 
   /* =============================================================================================================== */
@@ -1293,7 +1296,6 @@ export default {
   .boucle img {
     display: block;
     position: relative;
-   
     transition: all 0.35s;
   }
   .boucle:hover img {
@@ -1579,7 +1581,7 @@ export default {
   }
   /*le bouton et le positionnement du bouton*/
   .bouton1 {
-      background-image: linear-gradient(to left, yellow 0%, orange 100%);
+    background-image: linear-gradient(to left, yellow 0%, orange 100%);
     padding: 10px 30px;
     text-decoration: none;
     position: absolute;
@@ -1588,6 +1590,7 @@ export default {
     border-radius: 20px;
     color: white;
     font-family: "Playfair Display", serif;
+     box-shadow: 2px 2px 5px black;
   }
 
   /* =============================================================================================================== */

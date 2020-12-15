@@ -78,7 +78,7 @@ export default {
   methods: {
     doregister: function () {
       this.axios
-        .post("http://localhost:3000/client/register", {
+        .post(this.$apiurl +"client/register", {
           prenom: this.prenom,
           nom: this.nom,
           email: this.email,

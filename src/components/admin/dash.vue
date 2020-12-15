@@ -120,12 +120,20 @@ a:hover{
 }
 
 @media (max-width: 1400px) {
+ 
   #grid-container {
     grid-template-columns: 100%;
   }
+  .links h3:hover{
+    color:  #ffab05;
+}
+a:hover{
+    text-decoration: none;
+}
 }
 
 @media (max-width: 950px) {
+
   .title-container h1 {
     display: none;
   }
@@ -141,5 +149,19 @@ a:hover{
   .title-container {
     padding: 20px;
   }
+  .links:hover{
+    border-left: 5px solid  #ffab05;
+    background-color: #FFF9E2;
+    width: 100%;
+    box-shadow:10px 15px 5px 3px #ffab05;
+    border-radius: 7px;
+    color:  #ffab05;
+}
+.links h3:hover{
+    color:  #ffab05;
+}
+a:hover{
+    text-decoration: none;
+}
 }
 </style>

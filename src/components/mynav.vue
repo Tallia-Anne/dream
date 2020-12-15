@@ -77,8 +77,8 @@ export default {
 
 <style scoped>
 /* la couleur navabar */
-.bg-info {
-  background-color: black !important;
+.navbar.bg-info {
+    background-color: black !important;
 }
 /* la taille du logo*/
 .logo {
@@ -101,6 +101,9 @@ em {
 .color {
   color: white;
 }
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255 255 255) !important;
+}
 /* taille de panier */
 .fa-shopping-basket:before {
   font-size: 21px;
@@ -110,6 +113,9 @@ em {
   font-size: 21px;
 }
 navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: white;
+}
+navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link {
     color: white;
 }
 </style>
