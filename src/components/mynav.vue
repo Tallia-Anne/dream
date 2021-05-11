@@ -37,13 +37,13 @@
             </b-dropdown-item>
             <b-dropdown-item href="/produitl"> cheveux lisses </b-dropdown-item>
             <b-dropdown-item href="/huile"> Huile essentielle </b-dropdown-item>
-            <b-dropdown-item href="/conseil"> Conseil </b-dropdown-item>
+               <b-dropdown-item href="/accessoire"> Accessoire</b-dropdown-item>
           </b-nav-item-dropdown>
           <b-navbar-nav class="color">
             <b-nav-item href="/produitkids">Enfant</b-nav-item>
           </b-navbar-nav>
           <b-navbar-nav class="color">
-            <b-nav-item href="/accessoire">Accessoire</b-nav-item>
+            <b-nav-item href="/decouvrir"> A propos</b-nav-item>
           </b-navbar-nav>
           <b-nav-item-dropdown right>
             <!-- Using 'button-content' slot -->

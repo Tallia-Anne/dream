@@ -60,6 +60,7 @@ export default {
 
 <style scoped>
 @media screen and (min-width: 1280px) {
+  /* arrière du conteneur */
  .arriere {
    background-image: url("../assets/fond.jpg");
      background-repeat: no-repeat;
@@ -70,6 +71,7 @@ export default {
     position: absolute;
     
 }
+/* le conteneur de l'arrière plan */
 .card {
 	margin: 50px auto;
 	background: #ffffff;
@@ -81,7 +83,7 @@ export default {
 	box-shadow: 3px 2px 9px 0px rgba(80, 63, 63, 0.62);
 	transition: width .6s;
 }
-
+/* la bannière du profile */
 .card .banner {
 	background-image: url("https://image.freepik.com/photos-gratuite/rose-fleurs-violettes_1203-2191.jpg");
 	height: 125px;
@@ -126,10 +128,10 @@ export default {
     transform: translatey(5px);
   }
 
-  /* ----------------------------------------------------   Fin de Parti4   ------------------------------------------------------------------------- */
+  /* ----------------------------------------------------   Fin   ------------------------------------------------------------------------- */
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
-  /* ----------------------------------------------------   Parti1   ------------------------------------------------------------------------- */
+  /* -------------   arrière-plan   -------------*/
   .arrière {
     background-image: url("https://img.freepik.com/photos-gratuite/vue-dessus-bouteille-noix-coco-tranches-orance_23-2148305477.jpg?size=626&ext=jpg&ga=GA1.2.1033970166.1585772392");
      background-repeat: no-repeat;
@@ -140,6 +142,7 @@ export default {
     position: absolute;
     margin-top: 2%;
 }
+/* conteneur de la card profile*/
 .card {
 	margin: 50px auto;
 	background: #ffffff;
@@ -151,17 +154,17 @@ export default {
 	box-shadow: 3px 2px 9px 0px rgba(80, 63, 63, 0.62);
 	transition: width .6s;
 }
-
+/* la bannier de la profil */
 .card .banner {
 	background-image: url("https://image.freepik.com/photos-gratuite/rose-fleurs-violettes_1203-2191.jpg");
 	height: 125px;
 }
-
+/* le conteneur qui contient les information de l'utilisateur */
 .card .info {
 	padding-top: 48px;
 	background: #FCD6EA;
 }
-
+/* L'apparence des informations de l'utilisateur*/
 .card .info .details {
 	text-align: left;
 	color: #ff8838;

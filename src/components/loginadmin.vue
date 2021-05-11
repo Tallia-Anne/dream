@@ -66,19 +66,18 @@ export default {
                     localStorage.setItem("auth",res.data.auth);
                     localStorage.setItem("token",res.data.token);
                     var user = jwt.decode(res.data.token);
-                    //decter le role 
                     console.log(user);
+                     //decter le role 
                     if(user.role == "admin") {
                         this.$router.push({path: "/admin/dashboard"}); 
                     }else {
                         this.$router.push({name: 'login'})
                     window.location.reload(); 
                     }
-                    /*this.$router.push({name: '/admin/homeuser'})
-                    window.location.reload();*/
+                   
                 }else{
                     alert(res.data.auth);
-                    /*this.$router.push({name: "register", params: {msg: "non connecté"} })*/
+                    
                 }
             })
             .catch(err => {

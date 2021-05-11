@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import conseil from "../components/conseil.vue";
+
 import decouvrir from "../components/decouvrir.vue";
 import newsletter from "../components/newsletter.vue";
 import dejacompte from "../components/dejacompte.vue";
@@ -136,11 +136,7 @@ const routes = [{
         name: "decouvrir",
         component: decouvrir,
     },
-    {
-        path: "/conseil",
-        name: "conseil",
-        component: conseil,
-    },
+
     {
         path: "/dtproduit/:id",
         name: "dtproduit",

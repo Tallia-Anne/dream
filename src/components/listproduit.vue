@@ -3,8 +3,11 @@
      <dash />
      <section id="main-dashboard-content">
          <div class="action-icons">
+           
           <div class="action-icon-one">
-              <a href=""><i class="fa fa-times"></i></a>
+              <a href=""><i class="fa fa-times"></i>
+              
+              </a>
           </div>
           <div class="action-icon-two">
               <a><i class="fas fa-plus"></i></a>
@@ -37,7 +40,7 @@
                                 <th><span>Référentiel</span></th>
                                 <th><span>Prix</span></th>
                                 <th><span>Type de produit</span></th>
-                                
+                                <th><span>Action</span></th>
                                 </tr>
                             </thead>
                               <!-- Fin tête du tableau  -->
@@ -73,6 +76,7 @@
                                     <td>
                                         <p href="#">{{ produit.typeproduit }}</p>
                                     </td>
+                                    <td><button @click="deleteProduit(produit.id)" >Supprimer</button></td>
                                    
                                    
                                 </tr>
@@ -115,7 +119,7 @@ export default {
   },
   created() {
     this.axios
-      .get(this.$apiurl +"produit/all")
+      .get("http://localhost:3000/produit/all")
       .then((res) => {
         console.log(res);
         this.produits = res.data.produits;
@@ -124,6 +128,20 @@ export default {
         alert(err);
       });
   },
+  methods: {
+    deleteProduit:function() {
+      this.axios
+      .delete("http://localhost:3000/produit/" + this.produit.id,
+      this.produit)
+      .then((res) => {
+        console.log(res);
+        this.produit = res.data.produit;
+      })
+      .catch((err) => {
+        alert(err);
+      });
+    }
+  }
 };
 </script>
 

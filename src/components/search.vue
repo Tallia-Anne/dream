@@ -119,7 +119,6 @@ export default {
   
   .single-publication {
     --auto-grid-min-size: 15rem;
-
     display: grid;
     grid-template-columns: repeat(
       auto-fill,

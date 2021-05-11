@@ -477,12 +477,6 @@ de l'image vers le bas */
     font-size: 20px;
     text-align: center;
   }
-  /* le format du formulaire */
-  .regform {
-    margin: 120px 20px;
-    flex-direction: column;
-    width: 73%;
-  }
   /* la taille de l'image */
   .regform .form-left {
     width: 100%;
@@ -504,16 +498,18 @@ de l'image vers le bas */
   }
   /* le bloc du formulaire */
   .regform {
-    background: #fff;
-    width: 67%;
+    margin: 120px 20px;
+    flex-direction: column;
+   background: #fff;
+    width: 78%;
     border-radius: 7px;
     font-family: "Courier New", Courier, monospace;
     position: relative;
     display: flex;
     box-shadow: 10px 3px 10px 11px rgba(0, 0, 0, 0.75);
-    margin-left: 13%;
+    margin-left: 10%;
     margin-top: 3%;
-    height: 49%;
+    height: 88%;
   }
   .regform .form-detail input {
     width: 92%;
@@ -535,13 +531,11 @@ de l'image vers le bas */
     background-image: linear-gradient(to left, yellow 0%, orange 100%);
     box-shadow: 0 9px 25px -5px orange;
     color: white;
-
     border-radius: 6px;
     width: 160px;
     padding: 10px;
     border: none;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0, 15) !important;
-    margin: 37px 0 50px 0px;
+    margin: 37px 0 50px 40px;
     font-family: "Courier New", Courier, monospace;
     font-weight: 700;
     font-size: 18px;

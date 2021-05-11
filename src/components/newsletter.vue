@@ -8,7 +8,6 @@
       <p>Veuillez entrer votre adresse e-mail pour recevoir les nouvelles.</p>
       <form  @submit.prevent="donewsletter"  >
         <input type="email" name="" placeholder="Entrer votre email" required v-model="email" />
-
         <button><i class="fas fa-envelope"></i> Newsletter</button>
       </form>
     </div>
@@ -503,17 +502,15 @@ export default {
   /* icone du formulaire (fermer) */
   .fa-times:before {
     content: "\f00d";
-    position: absolute;
-
-    right: 84%;
-
-    top: 4%;
+    position: absolute; 
     z-index: 2;
     background: url("https://image.freepik.com/photos-gratuite/ensemble-produits-noix-coco-pour-soin-cheveux-du-corps_100073-106.jpg");
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-size: 32px;
-  }
+    right: 80%;
+    top: 8%;}
+    
   /* titre du formulaire */
   #container h2 {
     background: url("https://image.freepik.com/photos-gratuite/ensemble-produits-noix-coco-pour-soin-cheveux-du-corps_100073-106.jpg");

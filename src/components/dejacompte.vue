@@ -472,7 +472,7 @@ export default {};
     border-radius: 5px;
     margin: 3rem auto;
     background: rgba(255, 255, 255, 0.95);
-    height: 340px;
+    height: 280px;
     width: 286px;
     padding: 1em;
     position: fixed;
@@ -485,8 +485,8 @@ export default {};
   .fa-times:before {
     content: "\f00d";
     position: absolute;
-    right: 85%;
-    top: 4%;
+    right: 80%;
+    top: 8%;
     z-index: 2;
     background: url("https://image.freepik.com/photos-gratuite/huile-essentielle-naturelle-dans-flacon-verre-contre-espace-fleurs-roses-concept-essences-bio-cosmetiques-naturels-produits-sante-apothicaire-moderne_97899-1041.jpg");
     -webkit-text-fill-color: transparent;
@@ -512,7 +512,7 @@ export default {};
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-family: "Farsan", cursive;
-    margin: 3px 0 1.5em 0;
+    margin: 3px 0 30px 0;
     font-size: 1.3em;
   }
 

@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="regform">
       <div class="form-left">
-        <img src="../assets/5f493e28e31c4.jpg" alt="mon login" />
+        <img src="../assets/5f493e28e31c4.jpg" alt="mon register" />
       </div>
       <form @submit.prevent="doregister" class="form-detail">
         <h2>S'inscrit</h2>
@@ -204,11 +204,11 @@ de l'image vers le bas */
     width: 160px;
     padding: 10px;
     border: none;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0, 15) !important;
     margin: -12px 0 50px 0px;
     font-family: "Courier New", Courier, monospace;
     font-weight: 700;
     font-size: 18px;
+    color: white;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -309,11 +309,11 @@ de l'image vers le bas */
     width: 160px;
     padding: 10px;
     border: none;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0, 15) !important;
     margin: -12px 0 50px 0px;
     font-family: "Courier New", Courier, monospace;
     font-weight: 700;
     font-size: 18px;
+    color: white;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -394,11 +394,11 @@ de l'image vers le bas */
     width: 160px;
     padding: 10px;
     border: none;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0, 15) !important;
     margin: 37px 0 50px 156px;
     font-family: "Courier New", Courier, monospace;
     font-weight: 700;
     font-size: 18px;
+    color: white;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767.9px) {
@@ -484,6 +484,7 @@ de l'image vers le bas */
     font-family: "Courier New", Courier, monospace;
     font-weight: 700;
     font-size: 18px;
+    color: white;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
@@ -539,7 +540,7 @@ de l'image vers le bas */
     box-shadow: 10px 3px 10px 11px rgba(0, 0, 0, 0.75);
     margin-left: 13%;
     margin-top: 3%;
-    height: 49%;
+    height: 89%;
   }
   .regform .form-detail input {
     width: 92%;
@@ -564,8 +565,7 @@ de l'image vers le bas */
     width: 160px;
     padding: 10px;
     border: none;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0, 15) !important;
-    margin: 37px 0 50px 0px;
+    margin: 37px 0 50px 20px;
     font-family: "Courier New", Courier, monospace;
     font-weight: 700;
     font-size: 18px;
