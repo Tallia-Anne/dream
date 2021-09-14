@@ -54,7 +54,7 @@
             </div>
             <div class="add-to-cart">
               <a
-                @click="ajouter(produit.id, produit.nom, produit.prix)"
+                @click="ajouter(produit.id, produit.nom, produit.prix, produit.Images[0].image)"
                 class="default-btn"
                 >Je craque</a
               >
@@ -80,7 +80,62 @@ export default {
     return {
       produits: [],
       search: "",
+      Panier: [],
     };
+  },
+  methods: {
+    // de créer un panier
+    ajouter: function (id, nom, prix, image) {
+      alert(` le produit ${nom}`);
+      this.Panier = this.Panier || [];
+      localStorage.removeItem("panier");
+      // le panier n'existe pas
+      if (this.Panier.length === 0) {
+        let quantite = 1;
+        this.Panier.push({
+          produitId: id,
+          nom: nom,
+          quantite: quantite,
+          prix_unitaire: prix,
+          soustotal: quantite * prix,
+          image: image,
+        });
+      } else {
+        // le panier existe déjà
+        // le produit dèjà ajouter dans le panier
+        let alreadyProduit = false;
+
+        this.Panier.forEach((item) => {
+          if (item.produitId === id) {
+            item.quantite++;
+            item.soustotal = item.quantite * prix;
+            // le produit existe déjà
+            alreadyProduit = true;
+          }
+        });
+        // ajouter des produits differents
+        if (alreadyProduit === false) {
+          let quantite = 1;
+          this.Panier.push({
+            produitId: id,
+            nom: nom,
+            quantite: quantite,
+            prix_unitaire: prix,
+            soustotal: quantite * prix,
+            image: image,
+          });
+        }
+      }
+      localStorage.setItem("panier", JSON.stringify(this.Panier));
+    },
+    // permet voir si le panier fonctionne
+    getLocalStorage() {
+      let getLocalSt = localStorage.getItem("panier");
+      if (getLocalSt != null || getLocalSt !== undefined) {
+        this.Panier = JSON.parse(getLocalSt);
+        console.log(this.Panier);
+      }
+    },
   },
 
   computed: {

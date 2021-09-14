@@ -38,6 +38,7 @@
             <b-dropdown-item href="/produitl"> cheveux lisses </b-dropdown-item>
             <b-dropdown-item href="/huile"> Huile essentielle </b-dropdown-item>
                <b-dropdown-item href="/accessoire"> Accessoire</b-dropdown-item>
+                <b-dropdown-item href="/brocher"> Livre brocher</b-dropdown-item>
           </b-nav-item-dropdown>
           <b-navbar-nav class="color">
             <b-nav-item href="/produitkids">Enfant</b-nav-item>
@@ -102,7 +103,7 @@ em {
   color: white;
 }
 .navbar-dark .navbar-nav .nav-link {
-    color: rgb(255 255 255) !important;
+    color: rgb(255 255 255);
 }
 /* taille de panier */
 .fa-shopping-basket:before {
@@ -118,4 +119,5 @@ navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focu
 navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link {
     color: white;
 }
+
 </style>

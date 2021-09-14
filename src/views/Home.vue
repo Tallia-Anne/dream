@@ -112,7 +112,7 @@ au mieux vos produits</p>
             </div>
             <div class="add-to-cart">
               <a
-                @click="ajouter(produit.id, produit.nom, produit.prix)"
+                @click="ajouter(produit.id, produit.nom, produit.prix, produit.Images[0].image)"
                 class="default-btn"
                 >Je craque</a
               >
@@ -205,6 +205,60 @@ export default {
       produits: {},
     };
   },
+  methods: {
+    // de créer un panier
+    ajouter: function (id, nom, prix, image) {
+      alert(` le produit ${nom}`);
+      this.Panier = this.Panier || [];
+      localStorage.removeItem("panier");
+      // le panier n'existe pas
+      if (this.Panier.length === 0) {
+        let quantite = 1;
+        this.Panier.push({
+          produitId: id,
+          nom: nom,
+          quantite: quantite,
+          prix_unitaire: prix,
+          soustotal: quantite * prix,
+          image: image,
+        });
+      } else {
+        // le panier existe déjà
+        // le produit dèjà ajouter dans le panier
+        let alreadyProduit = false;
+
+        this.Panier.forEach((item) => {
+          if (item.produitId === id) {
+            item.quantite++;
+            item.soustotal = item.quantite * prix;
+            // le produit existe déjà
+            alreadyProduit = true;
+          }
+        });
+        // ajouter des produits differents
+        if (alreadyProduit === false) {
+          let quantite = 1;
+          this.Panier.push({
+            produitId: id,
+            nom: nom,
+            quantite: quantite,
+            prix_unitaire: prix,
+            soustotal: quantite * prix,
+            image: image,
+          });
+        }
+      }
+      localStorage.setItem("panier", JSON.stringify(this.Panier));
+    },
+    // permet voir si le panier fonctionne
+    getLocalStorage() {
+      let getLocalSt = localStorage.getItem("panier");
+      if (getLocalSt != null || getLocalSt !== undefined) {
+        this.Panier = JSON.parse(getLocalSt);
+        console.log(this.Panier);
+      }
+    },
+  },
   created() {
     this.axios
       .get(this.$apiurl +"produit/limit/4")
@@ -221,7 +275,6 @@ export default {
 
 <style scoped>
 * {
-   margin: 0;
   padding: 0;
 }
 @media screen and (min-width: 1280px) {
@@ -342,12 +395,14 @@ export default {
     text-align: center;
     font-family: "Playfair Display", serif;
     font-weight: bold;
+    font-size: 57px;
 
   }
   .overlay p  {
     color: #fff;
     text-align: center;
     font-family: "Playfair Display", serif;
+    padding: 31px;
   }
   .btn1 {
     position: absolute;
@@ -371,6 +426,9 @@ export default {
 
   /* =============================================================================================================== */
   /* ====================================================== SECTION 3 ========================================================= */
+ .container {
+    max-width: 1280px;
+  }
   /*l'ensemble de la section du produit*/
   .sectionproduit {
     position: relative;
@@ -493,10 +551,11 @@ export default {
     background-size: cover;
     /*l'arrière-plan ciblé ne se déplacera pas avec l'élément*/
     background-attachment: fixed;
+    background-position: center;
   }
 
  /* =============================================================================================================== */
-  /* ====================================================== SECTION 4-5 ========================================================= */
+  /* ====================================================== SECTION 4 ========================================================= */
 
 .recent-work {
   padding-top: 1rem;
@@ -593,7 +652,7 @@ export default {
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-   margin-bottom: -80px;
+   margin-bottom: -96px;
  }
  /* le titre de la section */
 .d-flex-c h2 {
@@ -754,6 +813,7 @@ export default {
     text-align: center;
     font-family: "Playfair Display", serif;
     font-weight: bold;
+    font-size: 57px;
 
   }
   /* le texte avec le format */
@@ -761,6 +821,7 @@ export default {
     color: #fff;
     text-align: center;
     font-family: "Playfair Display", serif;
+    padding: 31px;
   }
   /* le positionnement du bouton */
   .btn1 {
@@ -787,6 +848,9 @@ export default {
 
   /* =============================================================================================================== */
   /* ====================================================== SECTION 3 ========================================================= */
+  .container {
+    max-width: 1024px;
+  }
   /*l'ensemble de la section du produit*/
   .sectionproduit {
     position: relative;
@@ -1016,7 +1080,7 @@ export default {
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-   margin-bottom: -80px;
+   margin-bottom: -96px;
  }
  /* le titre de la section */
 .d-flex-c h2 {
@@ -1177,6 +1241,7 @@ export default {
     text-align: center;
     font-family: "Playfair Display", serif;
     font-weight: bold;
+    padding: 22px;
 
   }
   /* le text du parallaxe */
@@ -1193,8 +1258,9 @@ export default {
   /* le positionnement du bouton */
   .btn2 {
     position: absolute;
-    left: 36%;
-  }/* le format du bouton */
+    left: 28%;
+  }
+  /* le format du bouton */
   button {
     background-color: #5a1c33;
     color: #fff;
@@ -1322,9 +1388,22 @@ export default {
     box-shadow: 2px 2px 5px black;
   }
   /* =============================================================================================================== */
-  /* ====================================================== SECTION 3 ========================================================= */
+  /* ====================================================== SECTION 4 ========================================================= */
 
- /* ====================================================== SECTION 4 ========================================================= */
+  /* le parallaxe  */
+  .ctn2 {
+    height: 515px;
+    width: 100%;
+    background-image: url("../assets/parallaxedeux.jpg");
+    /*mettre l'image en couverture*/
+    background-size: cover;
+    /*l'arrière-plan ciblé ne se déplacera pas avec l'élément*/
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+ /* =============================================================================================================== */
+ /* ====================================================== SECTION 5 ========================================================= */
 /* l'ensemble de la section */
 .recent-work {
   padding-top: 1rem;
@@ -1422,7 +1501,7 @@ export default {
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-   margin-bottom: -80px;
+   margin-bottom: -96px;
  }
  /* le titre de la section */
 .d-flex-c h2 {
@@ -1586,12 +1665,14 @@ export default {
     text-align: center;
     font-family: "Playfair Display", serif;
     font-weight: bold;
+    padding: 11%;
 
   }
   .overlay p  {
     color: #fff;
     text-align: center;
     font-family: "Playfair Display", serif;
+    padding: 17px;
   }
   /* le positionnemnt du bouton */
   .btn1 {
@@ -1601,7 +1682,7 @@ export default {
   /* le positionnemnt du bouton */
   .btn2 {
     position: absolute;
-    left: 36%;
+    left: 15%;
   }/* le format du bouton */
   button {
     background-color: #5a1c33;
@@ -1616,6 +1697,7 @@ export default {
   }
   /* =============================================================================================================== */
   /* ====================================================== SECTION 3 ========================================================= */
+  
   /*l'ensemble de la section du produit*/
   .sectionproduit {
     position: relative;
@@ -1729,8 +1811,20 @@ export default {
     box-shadow: 2px 2px 5px black;
   }
   /* =============================================================================================================== */
-  /* ====================================================== SECTION 3 ========================================================= */
+  /* ====================================================== SECTION 4 ========================================================= */
+  /* le parallaxe  */
+  .ctn2 {
+    height: 515px;
+    width: 100%;
+    background-image: url("../assets/parallaxedeux.jpg");
+    /*mettre l'image en couverture*/
+    background-size: cover;
+    /*l'arrière-plan ciblé ne se déplacera pas avec l'élément*/
+    background-attachment: fixed;
+    background-position: center;
+  }
 
+ /* =============================================================================================================== */
  /* ====================================================== SECTION 5 ========================================================= */
 /* l'ensemble de la section */
 .recent-work {
@@ -1832,7 +1926,7 @@ export default {
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-   margin-bottom: -80px;
+   margin-bottom: -96px;
  }
  /* la titre de section */
 .d-flex-c h2 {
@@ -1874,7 +1968,7 @@ export default {
   
 
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 479.9px) {
   /* ensemble de la page */
   .wrap {
     width: 100%;
@@ -2150,9 +2244,22 @@ export default {
     box-shadow: 2px 2px 5px black;
   }
   /* =============================================================================================================== */
-  /* ====================================================== SECTION 3 ========================================================= */
+   /* ====================================================== SECTION 4 ========================================================= */
+  /* le parallaxe  */
+  .ctn2 {
+    height: 515px;
+    width: 100%;
+    background-image: url("../assets/parallaxedeux.jpg");
+    /*mettre l'image en couverture*/
+    background-size: cover;
+    /*l'arrière-plan ciblé ne se déplacera pas avec l'élément*/
+    background-attachment: fixed;
+    background-position: center;
+  }
 
- /* ====================================================== SECTION 4-5 ========================================================= */
+ /* =============================================================================================================== */
+
+ /* ====================================================== SECTION 5 ========================================================= */
 /* l'ensemble de la section */
 .recent-work {
   padding-top: 1rem;
@@ -2175,7 +2282,7 @@ export default {
 /* la ligne du titre */
 .ligne {
     border-bottom: 8px solid #ad207a8c;
-    width: 49%;
+    width: 25%;
     margin: 0 auto;
     padding-bottom: 13px;
 }
@@ -2251,7 +2358,7 @@ export default {
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-   margin-bottom: -80px;
+   margin-bottom: -96px;
  }
  /* le titre de la section */
 .d-flex-c h2 {
